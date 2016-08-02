@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 
 const LocationCard = ({location}) => (
     <div className="col s12 m6">
@@ -11,7 +12,7 @@ const LocationCard = ({location}) => (
                 <p>{location.shortDescription}</p>
             </div>
             <div className="card-action">
-                <a className="btn" href="#">Read more</a>
+                <Link className="btn" to="/location/1">Read more</Link>
             </div>
         </div>
     </div>
