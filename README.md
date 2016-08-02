@@ -18,15 +18,14 @@ cd react-introduction
 npm install
 ```
 
-Run the app in browser with live reloading:
+To run the static version of the initial list:
 
 ```
-npm start
+npm run static
 ```
 
-## How it works
+To run the react Javascript app:
 
-When you run the above command `npm start` you will see the final app launched in your browser.
-
-The basic html version of the app that we start with can be seen if 
-you visit [http://localhost:3000/static/index.html](http://localhost:3000/static/index.html).
+```
+npm run start
+```
