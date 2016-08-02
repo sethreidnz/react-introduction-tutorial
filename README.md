@@ -6,7 +6,7 @@ from the React team.
 
 ## Quick Start
 
-Requirements:
+**Requirements**:
 
 - Node >= 4
 
@@ -23,3 +23,10 @@ Run the app in browser with live reloading:
 ```
 npm start
 ```
+
+## How it works
+
+When you run the above command `npm start` you will see the final app launched in your browser.
+
+The basic html version of the app that we start with can be seen if 
+you visit [http://localhost:3000/static/index.html](http://localhost:3000/static/index.html).
