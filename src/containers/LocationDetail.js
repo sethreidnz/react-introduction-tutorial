@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
-import locations from '../api/locations';
-
-// Components
-import LocationCard from '../components/LocationCard';
 
 class LocationList extends Component {
   render() {
     return (   
         <div className="row">
-            <div class="col s12 m4">
-                    <img src="/src/images/aratiatia-rapids-sq.jpg" alt="Aratiatia Rapids"/>
+            <div className="col s12 m4">
+                <img src="/src/images/aratiatia-rapids-sq.jpg" alt="Aratiatia Rapids"/>
             </div>
-            <div class="col s12 m8">
+            <div className="col s12 m8">
                 <h2>Aratiatia Rapids</h2>
                 <p>
                     A few times each day, spill gates from a dam are opened at the top of the Aratiatia rapids and the narrow gorge 
