@@ -1,21 +1,25 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-const LocationCard = () => (
+const LocationCard = ({location}) => (
     <div className="col s12 m6">
         <div className="card">
             <div className="card-image">
-                <img src="/src/images/huka-falls-rect.jpg" alt="Huka Falls"/>
-                <span className="card-title">Huka Falls</span>
+                <img src={location.images.square} alt={location.name}/>
+                <span className="card-title">{location.name}</span>
             </div>
             <div className="card-content">
-                <p>The Waikato River, New Zealand's longest river, moves gracefully north from Lake Taupo between banks 100 metres apart.</p>
+                <p>{location.shortDescription}</p>
             </div>
             <div className="card-action">
-                <a className="btn" href="single-huka-falls.html">Read more</a>
+                <a className="btn" href="#">Read more</a>
             </div>
         </div>
     </div>
 );
+
+LocationCard.propTypes = { 
+    location: PropTypes.object.isRequired
+};
 
 export default LocationCard;
 
