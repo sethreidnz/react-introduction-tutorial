@@ -4,21 +4,13 @@ import locations from './api/locations';
 
 // Components
 import LocationCard from './components/LocationCard';
+import MainNavigation from './components/MainNavigation';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-          <nav>
-            <div className="nav-wrapper teal ">
-              <div className="container">
-                <a href="#" className="brand-logo">New Zealand Scenic Locations</a>
-                <ul id="nav-mobile" className="right hide-on-med-and-down">
-                  <li><a href="/">Home</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+            <MainNavigation/>
             <div className="container main-content">      
               <div className="row">
                   {locations.map(function(location) {
