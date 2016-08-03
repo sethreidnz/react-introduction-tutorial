@@ -47,7 +47,7 @@ export const getLocation = (id) =>{
         if(!location && prev.id === id){
             location = current
         }
-        return null;
+        return null
     })
     return location
 }
