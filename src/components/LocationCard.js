@@ -5,7 +5,7 @@ const LocationCard = ({location}) => (
     <div className="col s12 m6">
         <div className="card">
             <div className="card-image">
-                <img src={location.images.square} alt={location.name}/>
+                <img src={location.images.rectangle} alt={location.name}/>
                 <span className="card-title">{location.name}</span>
             </div>
             <div className="card-content">
