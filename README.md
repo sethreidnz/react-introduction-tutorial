@@ -29,3 +29,7 @@ To run the react Javascript app:
 ```
 npm run start
 ```
+
+## Follow the tutorial
+
+Get started, [click here](/tutorial/1.ProjectSetup).
