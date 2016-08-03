@@ -12,6 +12,7 @@ ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={LocationList} />
+      <Route path="/locations" component={LocationList} />
     </Route>
   </Router>,
   document.getElementById('root')
