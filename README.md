@@ -35,7 +35,7 @@ npm run start
 
 ## Follow the tutorial
 
-Get started, [click here](/tutorial/1.ProjectSetup).
+Get started, [click here](https://github.com/justsayno/react-introduction/wiki).
 
 ## Contributing
 
