@@ -41,13 +41,4 @@ const locations =  [
     }
 ]
 
-export const getLocation = (id) =>{
-    let location
-    debugger
-    location = locations.filter((value) => {
-        return value && (value.id === id)
-    })[0]
-    return location
-}
-
 export default locations
