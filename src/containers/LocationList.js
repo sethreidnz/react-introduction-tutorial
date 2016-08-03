@@ -9,7 +9,7 @@ class LocationList extends Component {
     return (   
         <div className="row">
             {locations.map((location) => {
-                return <LocationCard location={location} key={location.id} />;
+                return <LocationCard key={location.id} location={location} />;
             })}
         </div>
     );
