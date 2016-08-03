@@ -12,7 +12,7 @@ const LocationCard = ({location}) => (
                 <p>{location.shortDescription}</p>
             </div>
             <div className="card-action">
-                <Link className="btn" to="/locations" params={{ testvalue: "hello" }}>Read more</Link>
+                <Link className="btn" to={"locations/" + location.id}>Read more</Link>
             </div>
         </div>
     </div>

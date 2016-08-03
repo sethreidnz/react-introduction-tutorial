@@ -2,20 +2,26 @@ import React, { Component } from 'react'
 import { getLocation } from '../api/locations'
 
 class LocationDetail extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
+        debugger
+        const { id } = props.params
+        let location = getLocation(id)
         this.state = {
-            location: getLocation(1)
+            location: location
         }
     }
     render() {
+
+        const { name } = this.state.location
+        
         return (   
             <div className="row">
                 <div className="col s12 m4">
                     <img src="/src/images/aratiatia-rapids-sq.jpg" alt="Aratiatia Rapids"/>
                 </div>
                 <div className="col s12 m8">
-                    <h2>Aratiatia Rapids</h2>
+                    <h2>{name}</h2>
                     <p>
                         A few times each day, spill gates from a dam are opened at the top of the Aratiatia rapids and the narrow gorge 
                         fills with turbulent water surging past at up to 90,000 litres per second. Then, as the gates are closed about 

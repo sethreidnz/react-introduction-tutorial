@@ -43,9 +43,10 @@ const locations =  [
 
 export const getLocation = (id) =>{
     let location
+    debugger
     locations.reduce((prev, current, index) => {
-        if(!location && prev.id === id){
-            location = current
+        if(!location && prev && prev.id === id){
+            location = prev
         }
         return null
     })
