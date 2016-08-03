@@ -1,5 +1,5 @@
-import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
+import React, { PropTypes } from 'react'
+import { Link } from 'react-router'
 
 const LocationCard = ({location}) => (
     <div className="col s12 m6">
@@ -16,11 +16,11 @@ const LocationCard = ({location}) => (
             </div>
         </div>
     </div>
-);
+)
 
 LocationCard.propTypes = { 
     location: PropTypes.object.isRequired
-};
+}
 
-export default LocationCard;
+export default LocationCard
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const MainNavigation = ({location}) => (
     <nav>
@@ -11,7 +11,7 @@ const MainNavigation = ({location}) => (
             </div>
         </div>
     </nav>
-);
+)
 
-export default MainNavigation;
+export default MainNavigation
 

@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, browserHistory  } from 'react-router'
 
 // Main app wrapper component
-import App from './App';
+import App from './App'
 
 // Container Views
-import LocationList from './containers/LocationList';
-import LocationDetail from './containers/LocationDetail';
+import LocationList from './containers/LocationList'
+import LocationDetail from './containers/LocationDetail'
 
 ReactDOM.render(
   <Router history={browserHistory}>
@@ -18,4 +18,4 @@ ReactDOM.render(
     </Route>
   </Router>,
   document.getElementById('root')
-);
+)

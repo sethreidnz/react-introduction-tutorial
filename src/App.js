@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 
 // Components
-import MainNavigation from './components/MainNavigation';
+import MainNavigation from './components/MainNavigation'
 
 class App extends Component {
   render() {
@@ -13,8 +13,8 @@ class App extends Component {
               {this.props.children}
           </div>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
