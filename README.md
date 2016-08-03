@@ -4,6 +4,9 @@ This project is a simple repo showing the basics of using react as a view layer 
 using [Create React App](https://github.com/facebookincubator/create-react-app) the officially supported starter
 from the React team.
 
+
+You can fin the tutorial in this [repository's wiki here](https://github.com/justsayno/react-introduction/wiki).
+
 ## Quick Start
 
 **Requirements**:
@@ -33,3 +36,7 @@ npm run start
 ## Follow the tutorial
 
 Get started, [click here](/tutorial/1.ProjectSetup).
+
+## Contributing
+
+If you notice anything wrong or anyhing doesn't work please send me a pull request or raise an issue.
