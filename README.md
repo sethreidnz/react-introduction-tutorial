@@ -10,7 +10,7 @@ You can fin the tutorial in this [repository's wiki here](https://github.com/jus
 
 **Requirements**:
 
-- [Node](https://nodejs.org/en/) >= 4 (I recomend using [Node Version Manager for Windows](https://github.com/coreybutler/nvm-windows)
+- [Node](https://nodejs.org/en/) >= 4 (I recomend using [Node Version Manager for Windows](https://github.com/coreybutler/nvm-windows))
 
 Clone the repo and install the dependencies dependencies:
 
