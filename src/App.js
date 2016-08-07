@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
-import employees from './api/employees'
-
-// Components
-import EmployeeList from './components/EmployeeList'
-import EmployeeListItem from './components/EmployeeListItem'
+import './index.css'
 
 class App extends Component {
   render() {
+    const { children } = this.props
     return (
       <div className="App">
         <nav>
@@ -24,11 +21,7 @@ class App extends Component {
     <div className="container main-content">      
      <div className="row">
         <div className="col s12 m7">
-            <EmployeeList>
-             {employees.map((employee) => {
-                return <EmployeeListItem key={employee.id} employee={employee} />
-              })}
-            </EmployeeList>
+            { children }
         </div>
       </div>
     </div>
