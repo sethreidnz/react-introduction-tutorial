@@ -14,4 +14,8 @@ const EmployeeListItem = ({employee}) => (
     </li>
 )
 
+EmployeeListItem.propTypes = { 
+    location: PropTypes.object.isRequired
+}
+
 export default EmployeeListItem
