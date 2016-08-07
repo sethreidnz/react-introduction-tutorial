@@ -27,7 +27,7 @@ To run the static version of the initial list:
 npm run static
 ```
 
-To run the react Javascript app:
+To run the React Javascript app:
 
 ```
 npm run start
