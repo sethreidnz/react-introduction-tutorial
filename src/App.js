@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import employees from './api/employees'
 
 // Components
 import EmployeeListItem from './components/EmployeeListItem'
