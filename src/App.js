@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.props.message}
+        Hello World!
       </div>
     )
   }
