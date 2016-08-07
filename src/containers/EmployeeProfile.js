@@ -4,7 +4,6 @@ import { getEmployee } from '../api/employees'
 class EmployeeProfile extends Component {
     constructor({params}){
         super()
-        
         this.state = {
             employee: getEmployee(params.employeeId)
         }
