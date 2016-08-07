@@ -208,13 +208,12 @@ const employees =  [
     }
 ]
 
-export const getLocation = (id) =>{
-    let location
-    debugger
-    location = employees.filter((value) => {
+export const getEmployee = (id) =>{
+    let employee
+    employee = employees.filter((value) => {
         return value && (value.id === id)
     })[0]
-    return location
+    return employee
 }
 
 export default employees
