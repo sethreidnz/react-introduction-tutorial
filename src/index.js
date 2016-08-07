@@ -1,13 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route, browserHistory  } from 'react-router'
-
-// Main app wrapper component
-import App from './App'
+import Routes from './routes'
 
 ReactDOM.render(
-  <Router history={browserHistory }>
-    <Route path="/" component={App}/>
-  </Router>,
+  <Routes />,
   document.getElementById('root')
 )

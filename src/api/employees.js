@@ -149,17 +149,26 @@ const employees =  [
         firstName: "Pete",
         lastName:"Elliot",
         avatar: "/src/images/pete-elliot.png",
-        role:"",
-        team:"",
+        role:"IOS Developer",
+        team:"Digital",
         biography:"",
         keySkills: [
             {
-                name:"MCV / WEBAPI"
+                name:"Swift"
+            },
+            {
+                name:"Objective C"
+            },
+            {
+                name:"X Code"
             }
         ],
         recentProjects: [
             {
                 name:"City Council - Mobility solution"
+            },
+            {
+                name:"Fake Construction - Inventory App"
             }
         ],
     },
