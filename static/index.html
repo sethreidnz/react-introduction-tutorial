@@ -5,24 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>React App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <link rel="stylesheet" href="app.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../src/App.css"/>
   </head>
   <body>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` in this folder.
-      To create a production bundle, use `npm run build`.
-    -->
   <nav>
-    <div class="nav-wrapper teal ">
+    <div class="nav-wrapper black ">
        <div class="container">
-        <a href="#" class="brand-logo">New Zealand Scenic Locations</a>
+        <a href="#" class="brand-logo">Employee CV Manager</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="/">Home</a></li>
         </ul>
@@ -31,61 +21,57 @@
   </nav>
     <div class="container main-content">      
      <div class="row">
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-image">
-              <img src="/src/images/huka-falls-rect.jpg" alt="Huka Falls"/>
-              <span class="card-title">Huka Falls</span>
-            </div>
-            <div class="card-content">
-              <p>The Waikato River, New Zealand's longest river, moves gracefully north from Lake Taupo between banks 100 metres apart.</p>
-            </div>
-            <div class="card-action">
-              <a class="btn" href="single-huka-falls.html">Read more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-image">
-              <img src="/src/images/nugget-point-lighthouse-rect.jpg" alt="Nugget Point Lighthouse"/>
-              <span class="card-title">Nuget Point Lighthouse</span>
-            </div>
-            <div class="card-content">
-              <p>Nugget Point is one of the most distinctive landforms along the Otago coast. It's a steep headland with a lighthouse and a scattering of rocky islets (The Nuggets).</p>
-            </div>
-            <div class="card-action">
-              <a class="btn" href="single-nugget-point-lighthouse.html">Read more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-image">
-              <img src="/src/images/te-mata-peak-rect.jpg" alt="Te Mata Peak"/>
-              <span class="card-title">Te Mata Peak</span>
-            </div>
-            <div class="card-content">
-              <p>Te Mata Peak is at the western boundary of the wine-producing Heretaunga Plains and stands nearly 400 metres above sea level.</p>
-            </div>
-            <div class="card-action">
-              <a class="btn" href="single-te-mata-peak.html">Read more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-image">
-              <img src="/src/images/aratiatia-rapids-rect.jpg" alt="Aratiatia Rapids" />
-              <span class="card-title">Aratiatia Rapids</span>
-            </div>
-            <div class="card-content">
-              <p>A few times each day the narrow gorge fills with turbulent water surging past at up to 90,000 litres per second.</p>
-            </div>
-            <div class="card-action">
-              <a class="btn" href="single-aratiatia-rapids.html">Read more</a>
-            </div>
-          </div>
+        <div class="col s12 m7">
+            <ul class="collection">
+              <li class="collection-item avatar">
+                  <img src="../src/images/gabriella-boone.png" alt="" class="circle">
+                  <span class="title">Gabriella Boone</span>
+                  <p>.NET developer <br>
+                    Modern Apps
+                  </p>
+                  <a href="#" class="secondary-content btn black"><i class="material-icons left">description</i>View C.V.</a>
+              </li>
+              <li class="collection-item avatar">
+                  <img src="../src/images/rowanne-everett.png" alt="" class="circle">
+                  <span class="title">Rowanne Everett</span>
+                  <p>CRM consultant <br>
+                    Dynamics
+                  </p>
+                  <a href="#" class="secondary-content btn black"><i class="material-icons left">description</i>View C.V.</a>
+              </li>
+              <li class="collection-item avatar">
+                  <img src="../src/images/heath-kendrick.png" alt="" class="circle">
+                  <span class="title">Heath Kendrick</span>
+                  <p>Front-End developer <br>
+                    Modern Apps
+                  </p>
+                  <a href="#" class="secondary-content btn black"><i class="material-icons left">description</i>View C.V.</a>
+              </li>
+              <li class="collection-item avatar">
+                  <img src="../src/images/kathlyn-marley.png" alt="" class="circle">
+                  <span class="title">Kathlyn Marley</span>
+                  <p>UX Designer <br>
+                    Digital
+                  </p>
+                  <a href="#" class="secondary-content btn black"><i class="material-icons left">description</i>View C.V.</a>
+              </li>
+              <li class="collection-item avatar">
+                  <img src="../src/images/pete-elliot.png" alt="" class="circle">
+                  <span class="title">Pete Elliot</span>
+                  <p>Senior .NET Developer <br>
+                    Modern Apps
+                  </p>
+                  <a href="#" class="secondary-content btn black"><i class="material-icons left">description</i>View C.V.</a>
+              </li>
+              <li class="collection-item avatar">
+                  <img src="../src/images/andy-dawson.png" alt="" class="circle">
+                  <span class="title">Andy Dawson</span>
+                  <p>AX Developer <br>
+                    Dynamics
+                  </p>
+                  <a href="#" class="secondary-content btn black"><i class="material-icons left">description</i>View C.V.</a>
+              </li>
+            </ul>
         </div>
       </div>
     </div>
