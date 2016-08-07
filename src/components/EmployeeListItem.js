@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import { Link } from 'react-router'
 
 const EmployeeListItem = ({employee}) => (
     <li className="collection-item avatar">
@@ -7,10 +8,10 @@ const EmployeeListItem = ({employee}) => (
         <p>{employee.role} <br/>
         {employee.team}
         </p>
-        <a href="#" className="secondary-content btn black">
+        <Link  to={'/employee/' + employee.id} className="secondary-content btn black">
             <i className="material-icons left">description</i>
-            View C.V.
-        </a>
+                View C.V.
+        </Link>
     </li>
 )
 
