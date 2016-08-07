@@ -208,10 +208,10 @@ const employees =  [
     }
 ]
 
-export const getEmployee = (id) =>{
+export const getEmployee = (employeeId) =>{
     let employee
     employee = employees.filter((value) => {
-        return value && (value.id === id)
+        return value && (value.id === employeeId)
     })[0]
     return employee
 }
