@@ -1,14 +1,14 @@
 import React from 'react'
 
-const EmployeeListItem = ({employee}) => (
-    <li className="collection-item avatar">
-        <img src={employee.avatar} alt={employee.name} className="circle" />
-        <span className="title">{employee.firstName} {employee.lastName}</span>
-        <p>{employee.role} <br/>
-        {employee.team}
+const EmployeeListItem = () => (
+    <li class="collection-item avatar">
+        <img src="../src/images/gabriella-boone.png" alt="" class="circle" />
+        <span class="title">Gabriella Boone</span>
+        <p>.NET developer <br/>
+        Modern Apps
         </p>
-        <a href="#" className="secondary-content btn black">
-            <i className="material-icons left">description</i>
+        <a href="gabriella-boon.html" class="secondary-content btn black">
+            <i class="material-icons left">description</i>
             View C.V.
         </a>
     </li>
