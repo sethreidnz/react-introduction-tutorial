@@ -7,3 +7,17 @@ img{
 .secondary-content{
     color: yellow;
 }
+nav ul li.active {
+    background-color: yellow;
+}
+nav ul li.active a{
+    color: black;
+    font-weight: bold;
+}
+.profile-details label{
+    color: black;
+    font-weight: bold;
+}
+.profile-role, profile-team, label{
+    display: block;
+}
