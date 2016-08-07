@@ -4,7 +4,8 @@ This project is a simple repo showing the basics of using react as a view layer 
 using [Create React App](https://github.com/facebookincubator/create-react-app) the officially supported starter
 from the React team.
 
-You can fin the tutorial in this [repository's wiki here](https://github.com/justsayno/react-introduction/wiki).
+You can find the tutorial in this [repository's wiki here](https://github.com/justsayno/react-introduction/wiki).
+But there are a few steps you need to get up and running first.
 
 ## Quick Start
 
@@ -34,8 +35,10 @@ npm run start
 
 ## Follow the tutorial
 
-Get started, [click here](https://github.com/justsayno/react-introduction/wiki).
+The tutorial will go through all the basic parts of React and React Router with seperate branches for each step of the tutorial making it easy to code along.
+[Click here](https://github.com/justsayno/react-introduction/wiki) to start the tutorial.
 
 ## Contributing
 
-If you notice anything wrong or anyhing doesn't work please send me a pull request or raise an issue.
+If you notice anything wrong or anyhing doesn't work please send me a pull request or raise an issue. You can fork either the example app code base or
+the wiki and send pull requests.
