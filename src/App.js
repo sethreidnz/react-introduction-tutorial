@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import employees from './api/employees'
 
 // Components
+import EmployeeList from './components/EmployeeList'
 import EmployeeListItem from './components/EmployeeListItem'
 
 class App extends Component {
@@ -23,12 +24,11 @@ class App extends Component {
     <div className="container main-content">      
      <div className="row">
         <div className="col s12 m7">
-            <h3>Current Employees</h3>
-            <ul className="collection">
+            <EmployeeList>
              {employees.map((employee) => {
                 return <EmployeeListItem key={employee.id} employee={employee} />
               })}
-            </ul>
+            </EmployeeList>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ const EmployeeListItem = ({employee}) => (
 )
 
 EmployeeListItem.propTypes = { 
-    location: PropTypes.object.isRequired
+    employee: PropTypes.object.isRequired
 }
 
 export default EmployeeListItem
