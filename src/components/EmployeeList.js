@@ -1,17 +1,15 @@
 import React, { PropTypes } from 'react'
 
-const EmployeeList = ({children}) => {
-    return (
-        <div className="employee-list">
-            <h3>Current Employees</h3>
-            <ul >
-                {children}
-            </ul>
-        </div>
-    )
-}
+const EmployeeList = ({children}) => (
+    <div className="employee-list">
+        <h3>Current Employees</h3>
+        <ul className="collection">
+            {children}
+        </ul>
+    </div>
+)
 
-EmployeeList.propTypes = { 
+EmployeeList.PropTypes = {
     children: PropTypes.array
 }
 
