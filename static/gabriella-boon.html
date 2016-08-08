@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../src/App.css"/>
+  </head>
+  <body>
+  <nav>
+    <div class="nav-wrapper black ">
+       <div class="container">
+        <a href="/static" class="brand-logo">Employee CV Manager</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="active"><a href="#">Employees</a></li>
+          <li><a href="#">My Profile</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container main-content">      
+      <div class="row">
+        <div class="col s12 m4">
+            <div class="row">
+                <div class="profile">
+                    <div class="col s12 m6 profile-picture">
+                        <img src="../src/images/gabriella-boone.png" alt="" />
+                    </div>
+                    <div class="col s12 m6 profile-details">
+                        <h5 class="profile-name">Gabriella Boon</h5>
+                        <label>Role</label>
+                        <span class="profile-role">.NET developer</span>
+                        <label>Team</label>
+                        <span class="profile-team">Modern Apps</span>
+                    </div>
+                </div>           
+            </div>
+            <div class="row">
+                <div class="profile">
+                    <div class="col s12 m12 profile-details">
+                        <h5 class="profile-name">Key Skills and Technologies</h5>
+                        <ul class="collection">
+                            <li class="collection-item">MCV / WEBAPI</li>
+                            <li class="collection-item">SQL</li>
+                            <li class="collection-item">Epi Server</li>
+                            <li class="collection-item">Azure Configuration</li>
+                            <li class="collection-item">Web Forms</li>
+                            <li class="collection-item">Xamarin</li>
+                        </ul>
+                    </div>
+                </div>           
+            </div>
+        </div>
+        <div class="col s12 m8">
+          <h5>Biography</h5>
+          <p>
+            Gabriella Boon has been a .NET developer since 2011 having build various soultions
+            using ASPNET as well as mobile development using Xamarin. With background mostly
+            in server side development Gabriella is in her element when developing de-coupled
+            services and architecting SQL database solutions.
+          </p>
+          <h5>Recent Projects</h5>
+          <ul class="collection">
+              <li class="collection-item">City Council - Mobility solution</li>
+              <li class="collection-item">Mircosoft - Showcase project</li>
+              <li class="collection-item">Azure SQL database migraiton - On premise to cloud</li>
+              <li class="collection-item">Craig and Smiths - Farming supplies web site</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
