@@ -149,17 +149,26 @@ const employees =  [
         firstName: "Pete",
         lastName:"Elliot",
         avatar: "/src/images/pete-elliot.png",
-        role:"",
-        team:"",
+        role:"IOS Developer",
+        team:"Digital",
         biography:"",
         keySkills: [
             {
-                name:"MCV / WEBAPI"
+                name:"Swift"
+            },
+            {
+                name:"Objective C"
+            },
+            {
+                name:"X Code"
             }
         ],
         recentProjects: [
             {
                 name:"City Council - Mobility solution"
+            },
+            {
+                name:"Fake Construction - Inventory App"
             }
         ],
     },
@@ -199,13 +208,12 @@ const employees =  [
     }
 ]
 
-export const getLocation = (id) =>{
-    let location
-    debugger
-    location = employees.filter((value) => {
-        return value && (value.id === id)
+export const getEmployee = (employeeId) =>{
+    let employee
+    employee = employees.filter((value) => {
+        return value && (value.id === employeeId)
     })[0]
-    return location
+    return employee
 }
 
 export default employees
