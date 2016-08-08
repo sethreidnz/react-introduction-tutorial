@@ -4,7 +4,8 @@
 git checkout step-2
 ```
 
-Following on from our last step we have now introduced our first React Component. React applications are built up of a variety of nested Components and their HTML. It is a component oriented UI framework.
+Following on from our last step we have now introduced our first React Component. React applications are built up of a variety of nested Components and their HTML.
+ It is a component oriented UI framework.
 
 Our root basic component looks like this:
 
@@ -42,7 +43,7 @@ export default App
 ```
 
 This is simply a class that extends the React class [Component](https://facebook.github.io/react/docs/component-api.html).
-At the top we are importing the React library as well as using the es2015 [destructuring](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+At the top we are importing the React library as well as using the ES2015 [Destructuring Assignment](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 syntax to get a reference the Component class at the same time.
 
 Components are simple classes that have [various life cycle events](https://facebook.github.io/react/docs/component-specs.html) that React calls 

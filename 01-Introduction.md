@@ -3,7 +3,7 @@
 I am starting with an html version of am employee C.V. manager app designed to showcase a 
 software service companies employees' skills, describing the projects they have been involved in and the technologies they
 are experts in as individuals. This a good way to start a React application as its a good exercise in breaking
-the markup and behavoir down into components.
+the markup and behavior down into components.
 
 I have created the basic HTML version of the app using the [MaterializeCss](http://materializecss.com/) CSS framework for
 styling. To see this in action run:
@@ -15,14 +15,14 @@ npm run static
 This will launch your browser and you can see the static version of the site. If you click on the "View C.V."
 button for the top item you will see the static html version of an employees profile page.
 
-### Project Structrure
+### Project structure
 
 If you have checkout of the branch `step-0` you will have a project structure like this:
 
 ``` 
 React-Introduction/
  ├──src/                * The React app files
- |   ├──api/            * Simple mock api for employee data
+ |   ├──api/            * Simple mock API for employee data
  │   │
  |   ├──images/         * The images for the app
  │   │  
@@ -35,15 +35,15 @@ React-Introduction/
  |
  └──....                * Project setup related files
 ```
-*Some detail has been ommitted for clarity*
+*Some detail has been omitted for clarity*
 
 ## The Root Component
 
 The file `src/index.js` is where I bootstrap my employee app. Although (as explained later) React 
 does not use HTML templates I need to tell React where in our `index.html` file we would like to render our app.
 
-I've done this using the `ReactDOM` library which is a seperate library to the core React library and allows
-you to render your component heirarchy to a DOM node in your HTML like so:
+I've done this using the `ReactDOM` library which is a separate library to the core React library and allows
+you to render your component hierarchy to a DOM node in your HTML like so:
 
 ``` javascript
 import React from 'react'
@@ -86,8 +86,8 @@ If you run `npm start` from your command line then you
 will see this render as a blank page with the "Hello World!" Message at the top left, just like a normal HTML page.
 
 
-This should reload when you make changes or switch branches but sometimes the `create-react-app` build configuration doesn't work and you need to r
-estart it. There are better build systems (or you can create your own) but I'm using the [Create React App](https://github.com/facebookincubator/create-react-app)
-becuase it keeps all the bundling and non-react noise out of the project.
+This should reload when you make changes or switch branches but sometimes the `create-react-app` build configuration doesn't work and you need to restart it. 
+There are better build systems (or you can create your own) but I'm using the [Create React App](https://github.com/facebookincubator/create-react-app)
+because it keeps all the bundling and non-react noise out of the project.
 
 Next step - [JSX](01-JSX.md)

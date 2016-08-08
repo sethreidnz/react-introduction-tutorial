@@ -1,6 +1,6 @@
 # JSX
 
-**A lot of people get put off by React's use of JSX so I thought I would quickly give an introduction to it before we get into the building our first React application.**
+**A lot of people get put off by React's use of JSX so I thought I would explain what it is and its benefits before we get into the building our first React application.**
 
 ```
 git checkout step-1
@@ -36,9 +36,12 @@ ReactDOM.render(
 
 ```
 
-This is an extremely simplistic example of JSX and you will see more as we go along. As you can see you can place HTML tags but you can also place your own custom components as JSX as well (more on this later)
+This is an extremely simplistic example of JSX and you will see more as we go along. As you can see you can place HTML tags but you can also place your own custom components 
+as JSX as well (more on this later)
 
-The main thing to note is that for some of the html attributes the name deviates from the name in html. This is because the React team decided to use the [JavaScript DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) names because it already existed and was in camel case which makes it a lot easier to use in JavaScript (html is snake case).
+The main thing to note is that for some of the html attributes the name deviates from the name in html. This is because the React team decided to 
+use the [JavaScript DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) names because it already existed and was in camel case which 
+makes it a lot easier to use in JavaScript (html is snake case).
 
 One of the most obvious ones is `class` becomes `className`. For more JSX Gotchas have a look at [this article](https://facebook.github.io/react/docs/jsx-gotchas.html).
 

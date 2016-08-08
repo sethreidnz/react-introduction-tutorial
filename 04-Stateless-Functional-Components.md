@@ -1,4 +1,4 @@
-# Stateleess Function Components
+# Stateless Function Components
 
 ```
 git checkout step-2
@@ -32,7 +32,7 @@ const EmployeeListItem = () => (
 export default EmployeeListItem
 ```
 
-This is a `stateless functional component` which means it is just a function that returns a component heirarchy to render.
+This is a `stateless functional component` which means it is just a function that returns a component hierarchy to render.
 These types of components are pure functions of the current state. In the above example we are just returning some static
 markup but using what React calls `props` and you can see more about these in the [next step]() but lets quickly 
 look at how we can use this component in our `App` component.
