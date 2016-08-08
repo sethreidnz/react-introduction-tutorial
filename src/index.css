@@ -7,7 +7,7 @@ img{
 .secondary-content{
     color: yellow;
 }
-nav ul li.active {
+nav ul li.active  a{
     background-color: yellow;
 }
 nav ul li.active a{
