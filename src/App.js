@@ -20,9 +20,7 @@ class App extends Component {
   </nav>
     <div className="container main-content">      
      <div className="row">
-        <div className="col s12 m7">
             { children }
-        </div>
       </div>
     </div>
       </div>
