@@ -40,7 +40,7 @@ URLs. You can also use a hash based url system as well for legacy support.
 ## The Route component
 
 The route component can take a path (the relative url), a component or a list of named components components
-and a number of other properties. It is used to declaratively define route configurations.
+and a number of other properties. It is used to declaritively define route configurations.
 
 ## Creating a Route component
 
@@ -59,7 +59,7 @@ import { Router, Route, browserHistory  } from 'react-router'
 import App from './App'
 
 const Routes = () => (
-    <Router history={browserHistory }>
+    <Router history={browserHistory}>
         <Route path="/" component={App}/>
     </Router>
 )
