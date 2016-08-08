@@ -1,6 +1,6 @@
 # React Introduction
 
-This project is a simple companion repository for [this Introduction To React Tutorial](https://github.com/justsayno/react-introduction-tutorial) showing the basics of using 
+This project is a companion repository for [this Introduction To React Tutorial](https://github.com/justsayno/react-introduction-tutorial) showing the basics of using 
 react as a view layer in a web application. It was generatedusing [Create React App](https://github.com/facebookincubator/create-react-app) the officially supported starter
 from the React team.
 
@@ -36,7 +36,7 @@ npm run start
 ## Follow the tutorial
 
 The tutorial will go through all the basic parts of React and React Router with seperate branches for each step of the tutorial making it easy to code along.
-[Click here](https://github.com/justsayno/react-introduction/wiki) to start the tutorial.
+[Click here](https://github.com/justsayno/react-introduction-tutorial) to start the tutorial.
 
 ## Contributing
 
