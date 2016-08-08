@@ -1,12 +1,12 @@
 # React Introduction
 
-This project is a companion repository for [this Introduction To React Tutorial](https://github.com/justsayno/react-introduction-tutorial) showing the basics of using 
+This project is a companion repository for my [Introduction To React Tutorial](https://github.com/justsayno/react-introduction-tutorial) showing the basics of using 
 react as a view layer in a web application. It was generatedusing [Create React App](https://github.com/facebookincubator/create-react-app) the officially supported starter
 from the React team.
 
 There are a few steps you need to get up and running first.
 
-## Quick Start
+## Getting Started
 
 **Requirements**:
 
@@ -20,7 +20,7 @@ cd react-introduction
 npm install
 ```
 
-To run the static version of the initial list:
+To run the **static html version** I am starting with:
 
 ```
 npm run static
