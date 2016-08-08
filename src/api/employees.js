@@ -46,7 +46,7 @@ const employees =  [
         id: "8c5b25d5-64bb-411b-a1af-4fe1394e50a4",
         firstName: "Rowanne",
         lastName:"Everett",
-        avatar: "/src/images/rowanne-everett.jpg",
+        avatar: "/src/images/rowanne-everett.png",
         role:"CRM consultant",
         team:"Dynamics",
         biography:"Rowanne has 10 years experience designing, building and delivering high quality CRM solutions for companies in New Zealand and the United Kingdom. Her passion lies in finding the underlying business needs of each client she works with and immersing herself in the business.",
@@ -80,7 +80,7 @@ const employees =  [
         id: "1191fdcd-0641-44f5-9380-792b1a92a44b",
         firstName: "Heath",
         lastName:"Kendrick",
-        avatar: "/src/images/heath-kendrick.jpg",
+        avatar: "/src/images/heath-kendrick.png",
         role:"Front-End developer",
         team:"Modern Apps",
         biography:"Heath started his career as a graphic designer but after learning basic HTML and JavaScript he quickly began to shift focus on his career. With a strong enphasis on usability and asthetics Health has delivered slick mobile and web interfaces for over 4 years.",
@@ -114,7 +114,7 @@ const employees =  [
         id: "af0034a0-19a4-4aed-9c2c-52d9d599d1ac",
         firstName: "Kathlyn",
         lastName:"Marley",
-        avatar: "/src/images/kathlyn-marley.jpg",
+        avatar: "/src/images/kathlyn-marley.png",
         role:"UX Designer",
         team:"Digital",
         biography:"Kathleen is an expert in both user experience and design thinking. Embeding herself in clients for weeks or months to fully understand the needs of the end users, as well as spotting areas where business could be improved or optimised.",
@@ -148,18 +148,27 @@ const employees =  [
         id: "cde5028a-0106-46d2-a616-09f39694c6eb",
         firstName: "Pete",
         lastName:"Elliot",
-        avatar: "/src/images/pete-elliot.jpg",
-        role:"",
-        team:"",
+        avatar: "/src/images/pete-elliot.png",
+        role:"IOS Developer",
+        team:"Digital",
         biography:"",
         keySkills: [
             {
-                name:"MCV / WEBAPI"
+                name:"Swift"
+            },
+            {
+                name:"Objective C"
+            },
+            {
+                name:"X Code"
             }
         ],
         recentProjects: [
             {
                 name:"City Council - Mobility solution"
+            },
+            {
+                name:"Fake Construction - Inventory App"
             }
         ],
     },
@@ -167,7 +176,7 @@ const employees =  [
         id: "88fe44f8-a01b-4ed0-a0da-793be90b3c25",
         firstName: "Andy",
         lastName:"Dawson",
-        avatar: "/src/images/andy-dawson.jpg",
+        avatar: "/src/images/andy-dawson.png",
         role:"Senior .NET Developer",
         team:"Modern Apps",
         biography:"Andy has been developing softare since the late 90s using a variety of technologies until he learned .NET back on version 2 and has never looked back. With a hand in both front-end and back-end development Andry has also become very familiar with the fast paced JavaScript world and coninutes to push himself to learn new technologies.",
@@ -199,13 +208,12 @@ const employees =  [
     }
 ]
 
-export const getLocation = (id) =>{
-    let location
-    debugger
-    location = employees.filter((value) => {
-        return value && (value.id === id)
+export const getEmployee = (employeeId) =>{
+    let employee
+    employee = employees.filter((value) => {
+        return value && (value.id === employeeId)
     })[0]
-    return location
+    return employee
 }
 
 export default employees
