@@ -1,7 +1,7 @@
 # React Introduction
 
-This project is a simple repo showing the basics of using react as a view layer in a web application. It was generated
-using [Create React App](https://github.com/facebookincubator/create-react-app) the officially supported starter
+This project is a simple companion repository for [this Introduction To React Tutorial](https://github.com/justsayno/react-introduction-tutorial) showing the basics of using 
+react as a view layer in a web application. It was generatedusing [Create React App](https://github.com/facebookincubator/create-react-app) the officially supported starter
 from the React team.
 
 You can find the tutorial in this [repository's wiki here](https://github.com/justsayno/react-introduction/wiki).
