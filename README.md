@@ -4,14 +4,13 @@ This project is a companion repository for [this Introduction To React Tutorial]
 react as a view layer in a web application. It was generatedusing [Create React App](https://github.com/facebookincubator/create-react-app) the officially supported starter
 from the React team.
 
-You can find the tutorial in this [repository's wiki here](https://github.com/justsayno/react-introduction/wiki).
-But there are a few steps you need to get up and running first.
+There are a few steps you need to get up and running first.
 
 ## Quick Start
 
 **Requirements**:
 
-- [Node](https://nodejs.org/en/) >= 4 (I recomend using [Node Version Manager for Windows](https://github.com/coreybutler/nvm-windows))
+- [Node](https://nodejs.org/en/) >= 4 (I recomend using [Node Version Manager](https://github.com/creationix/nvm) on `nix systems or [Node Version Manager for Windows](https://github.com/coreybutler/nvm-windows))
 
 Clone the repo and install the dependencies dependencies:
 
@@ -40,5 +39,5 @@ The tutorial will go through all the basic parts of React and React Router with 
 
 ## Contributing
 
-If you notice anything wrong or anyhing doesn't work please send me a pull request or raise an issue. You can fork either the example app code base or
-the wiki and send pull requests.
+If you notice anything wrong or anyhing doesn't work please send me a pull request or raise an issue. You can fork either the example app code in this repository
+or the compaonion tutorial depending where the issue is.
