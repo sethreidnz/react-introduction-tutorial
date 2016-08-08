@@ -148,3 +148,4 @@ more efficiently track changes in the state of your application. It just needs t
 item in the collection.
 
 Next step - [Nesting Components](06-Nesting-Components.md)
+
