@@ -1,3 +1,5 @@
+# Stateleess Function Components
+
 ```
 git checkout step-2
 ```
@@ -78,4 +80,6 @@ class App extends Component {
 export default App
 ```
 
-But we only have one employee now. Lets fix that in the [next step]()
+But we only have one employee now. We'll fix this in the next step.
+
+Next Step - [Component Props](05-Component-Props.md)

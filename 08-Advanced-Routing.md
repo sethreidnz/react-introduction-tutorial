@@ -1,3 +1,5 @@
+# Advanced Routing
+
 ```
 git checkout step-8
 ```
@@ -65,3 +67,5 @@ define our location list route. This IndexRoute component defines the default ro
 
 I have also included a normal `Route` component for demonstration purposes giving a different path `'/dashbaord'` the the same container component
 as the `IndexRoute`.
+
+Next step - [Link Component](09-Link-Component.md)

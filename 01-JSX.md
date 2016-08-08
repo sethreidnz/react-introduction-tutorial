@@ -1,3 +1,5 @@
+# JSX
+
 **A lot of people get put off by React's use of JSX so I thought I would quickly give an introduction to it before we get into the building our first React application.**
 
 ```
@@ -53,3 +55,4 @@ All that being said I can see some downsides, the most convincing one is that of
 
 You can read more about JSX [here in Facebook's in depth guide](https://facebook.github.io/react/docs/jsx-in-depth.html).
 
+Next step - [First Component](02-First-Component.md)

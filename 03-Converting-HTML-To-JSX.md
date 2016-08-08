@@ -1,3 +1,5 @@
+# Converting our HTML
+
 ``` shell
 git checkout step-2
 ```
@@ -65,3 +67,5 @@ import './index.css';
 ```
 
 That's it! In the next step we will start breaking this HTML into components.
+
+Next Step - [Stateless Functional Components](04-Stateless-Functional-Components.md)

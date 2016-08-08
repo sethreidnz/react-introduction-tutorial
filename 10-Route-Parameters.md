@@ -1,3 +1,5 @@
+# Route Parameters
+
 ```
 git checkouts step-10
 ```
@@ -129,5 +131,3 @@ class EmployeeProfile extends Component {
 
 export default EmployeeProfile
 ```
-
-Lets break this down into small components in the [next section]()

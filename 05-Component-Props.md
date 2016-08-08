@@ -1,3 +1,5 @@
+# Component Props
+
 ```
 git checkout step-5
 ```
@@ -144,3 +146,5 @@ to loop through each item in the employee and render an `EmployeeListItem`.
 Notice how I have added a `key` prop to my LocationCard component. This is an internal React requirement that allows it to
 more efficiently track changes in the state of your application. It just needs to be a unique identifier for each
 item in the collection.
+
+Next step - [Nesting Components](06-Nesting-Components.md)

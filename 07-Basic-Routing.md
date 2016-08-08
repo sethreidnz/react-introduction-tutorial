@@ -1,3 +1,5 @@
+Basic Routing
+
 ```
 git checkout step-7
 ```
@@ -65,4 +67,6 @@ const Routes = () => (
 export default Routes
 
 ```
+
+Next step - [Advanced Routing](08-Advanced-Routing.md)
 

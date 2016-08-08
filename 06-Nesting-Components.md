@@ -1,3 +1,5 @@
+# Nesting Components
+
 ```
 git checkout step-6
 ```
@@ -68,4 +70,6 @@ This is equivilent to writing
 The parent component will recieve the array of components as `props.children`. However if there is only
 one component it will receive the component itself without the array wrapper for performance reasons.
 
-Now that I have shown you how to nest components. What if we want to switch between? See the [next step]().
+Now that I have shown you how to nest components. What if we want to switch between?
+
+Next step - [Basic Routing](07-Basic-Routing.md)

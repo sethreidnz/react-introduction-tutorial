@@ -1,3 +1,5 @@
+# Our First Component
+
 ```
 git checkout step-2
 ```
@@ -49,3 +51,4 @@ the HTML and components that make up your app. This must have **only one** root 
 
 This component doesn't do much, so in the next step we are going to start bringing in the HTML from the static folder.
 
+Next step - [Converting HTML to JSX](03-Converting-HTML-To-JSX.md)
