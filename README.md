@@ -1,7 +1,7 @@
 # React Introduction
 
 This project is a companion repository for my [Introduction To React Tutorial](https://github.com/justsayno/react-introduction-tutorial) showing the basics of using 
-react as a view layer in a web application. It was generatedusing [Create React App](https://github.com/facebookincubator/create-react-app) the officially supported starter
+react as a view layer in a web application. It was generated using [Create React App](https://github.com/facebookincubator/create-react-app) the officially supported starter
 from the React team.
 
 There are a few steps you need to get up and running first.
@@ -39,5 +39,5 @@ The tutorial will go through all the basic parts of React and React Router with 
 
 ## Contributing
 
-If you notice anything wrong or anyhing doesn't work please send me a pull request or raise an issue. You can fork either the example app code in this repository
-or the compaonion tutorial depending where the issue is.
+If you notice anything wrong or anything doesn't work please send me a pull request or raise an issue. You can fork either the example app code in this repository
+or the companion tutorial depending where the issue is.
