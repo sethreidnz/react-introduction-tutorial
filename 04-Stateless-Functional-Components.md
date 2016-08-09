@@ -9,8 +9,9 @@ thought of also as 'dumb' and 'smart' components.
 
 **Container** components are responsible for things like orchestrating user interaction, initiating and retrieving the data among other view logic related things. 
 While **presentation** components are simple pure functions that take the current state and create a rendered representation of it.
+There is a great article by Dan Abramov [here](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.vmpzp1loa) explaining these ideas. I will go into more depth on creating smart/container components later in the tutorial.
 
-If you open up `/src/components/EmployeeListItem.js` you will see the following:
+Open up `/src/components/EmployeeListItem.js` and you will see the following:
 
 ``` javascript
 import React from 'react'
