@@ -1,13 +1,13 @@
 # JSX
 
-**A lot of people get put off by React's use of JSX so I thought I would explain what it is and its benefits before we get into the building our first React application.**
+**A lot of people get put off by React's use of JSX so I thought I would explain what it is and its benefits before we get into building our first React application.**
 
 ```
 git checkout step-1
 ```
 
 React uses an extended version of JavaScript called JSX. It basically just lets you put html-like markup
-into your JavaScript. Where other frameworks bring JavaScipt to HTML React bring HTML to JavaScript.
+into your JavaScript. Where other frameworks bring JavaScipt to HTML, React brings HTML to JavaScript.
 
 For example instead of doing something like this as you would in Angular:
 
@@ -24,7 +24,7 @@ myApp.controller('HelloWorldController', ['$scope', function($scope) {
 </div>
 ```
 
-You would could do as we did in in the [Project Setup](https://github.com/justsayno/react-introduction/wiki/0---Project-Setup) step and simply do this:
+You could do as we did in the [Project Setup](https://github.com/justsayno/react-introduction/wiki/0---Project-Setup) step and simply do this:
 
 ``` JavaScript
 ReactDOM.render(
@@ -49,12 +49,12 @@ One of the most obvious ones is `class` becomes `className`. For more JSX Gotcha
 
 Having our markup in our Javascript has a number of great advantages that are summed up really well in Corey House's post [React’s JSX: The Other Side of the Coin](https://medium.com/@housecor/react-s-jsx-the-other-side-of-the-coin-2ace7ab62b98#.a4ktqckxa). Some of the key benefits include:
 
-- Quick to fail. When there is an error in your JSX there will be compile issues and it will break with a clear error message
-- Leverage the power of JavaScript. Everything is JavaScript and you can use anything that is JavaScript to manipulate your rendered HTML
+- Quick to fail. When there is an error in your JSX there will be compile issues and it will break with a clear error message.
+- Leverage the power of JavaScript. Everything is JavaScript and you can use anything that is JavaScript to manipulate your rendered HTML.
 - No propriety API for template logic. Everything is simply plain JavaScript with an HTML like syntax embedded in it.
-- Less context switching. No need to have loosely coupled HTML and JavaScript where you don't know what relies on what attribute or value
+- Less context switching. No need to have loosely coupled HTML and JavaScript where you don't know what relies on what attribute or value.
 
-All that being said I can see some downsides, the most convincing one is that of deviation from open web standards. That being said other templating engines used in other frameworks do exactly the same thing (just on their html) so I don't really see this as a huge issue.
+All that being said I can see some downsides. The most convincing one is the deviation from open web standards. Other templating engines used in other frameworks do exactly the same thing (just in their html) so I don't really see this as a huge issue.
 
 You can read more about JSX [here in Facebook's in depth guide](https://facebook.github.io/react/docs/jsx-in-depth.html).
 
