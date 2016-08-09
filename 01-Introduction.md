@@ -57,12 +57,12 @@ ReactDOM.render(
 )
 ```
 
-At the top I import both React (this must be in scope if using and JSX) and ReactDOM. Then I call the 
+At the top I import both React (this must be in scope if using JSX) and ReactDOM. Then I call the 
 [`ReactDOM.render()`](https://facebook.github.io/react/blog/2015/10/01/react-render-and-top-level-api.html) method. 
 This method takes two arguments. The first argument a single component or HTML element and second argument is the DOM element 
 that the app is to be rendered in. 
 
-In this case we I am using a `<div>` containing "Hello World!" as the component and a `<div>` that has an `id` of `root` as the DOM element.  
+In this case I am using a `<div>` containing "Hello World!" as the component and a `<div>` that has an `id` of `root` as the DOM element.  
 In `index.html` I have:
 
 ``` html
