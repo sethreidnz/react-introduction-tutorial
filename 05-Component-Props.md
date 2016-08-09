@@ -36,7 +36,7 @@ export default App
 **Using a pure function taking props as an argument **
 
 ```
-// without using the es6 paramter deconstructor syntax
+// without using the es6 parameter deconstructor syntax
 const MyComponent = (props) => (
     <div>
         {props.myProp}
@@ -54,7 +54,7 @@ const MyComponent = ({myProp}) => (
 )
 ```
 
-**same again with more than other prop key**
+**same again with more than one prop key**
 
 ```
 const MyComponent = ({myProp, myOtherProp}) => (
@@ -137,7 +137,7 @@ EmployeeListItem.propTypes = {
 export default EmployeeListItem
 ```
 
-In this example I have sat that there will be an `object` and i have also defined that is required. If the 
+In this example I have said that there will be an `object` and I have also defined that is required. If the 
 component doesn't receive the prop or its the wrong type/shape then an error will show in the browser console.
 
 ## Passing the props in
