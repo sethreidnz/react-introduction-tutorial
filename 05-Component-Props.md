@@ -33,23 +33,29 @@ class App extends Component {
 
 export default App
 ```
-**Using a pure function and parameter deconsstruction**
+**Using a pure function taking props as an argument **
 
 ``` javascript
-// without using the es6 paramter deconstructor syntax
 const MyComponent = (props) => (
     <div>
         {props.myProp}
     </div>
 )
+```
 
-// using deconstructor syntax
+**Using a pure function and using deconstructing on the props argument to get `myProp`**
+
+```
 const MyComponent = ({myProp}) => (
     <div>
         {myProp}
     </div>
 )
+```
 
+**same again with more than one prop key**
+
+```
 const MyComponent = ({myProp, myOtherProp}) => (
     <div>
         {myProp} - {myOtherProp}
@@ -58,8 +64,8 @@ const MyComponent = ({myProp, myOtherProp}) => (
 
 ```
 
-As you can see above you can render values from variables by putting them insdie `{}`'s using the same syntax as
-[Tempalte Literals in es2015](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Template_literals). 
+As you can see above you can render values from variables by putting them inside `{}`'s using the same syntax as
+[Template Literals in ES2015](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Template_literals). 
 This can be seen in the above examples and in our app in the `EmployeeListItem` component:
 
 ``` javascript
@@ -86,8 +92,8 @@ const EmployeeListItem = ({employee}) => (
 git checkout step-5-1
 ```
 
-React has a utlity called `PropTypes` which can be used to define what a component expects to get as `props`. This can be JavaScript primatives like `string, object, number`
-or they can be 'shapes' which are contructed using object literals and the function `PropTypes.shapeOf()`. You can also make props required using `isRequire()`. This tutorial 
+React has a utility called `PropTypes` which can be used to define what a component expects to get as `props`. This can be JavaScript primitives like `string, object, number`
+or they can be 'shapes' which are constructed using object literals and the function `PropTypes.shapeOf()`. You can also make props required using `isRequire()`. This tutorial 
 won't go into great detail on PropTypes but they are very powerful and word pointing out.
 
 You can add PropTypes to any kind of component (function component, class component etc). This is how I have added it to my `EmployeeListItem` component:
@@ -110,14 +116,28 @@ const EmployeeListItem = ({employee}) => (
 )
 
 EmployeeListItem.propTypes = { 
-    location: PropTypes.object.isRequired
+    employee: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        firstName: PropTypes.string.isRequired,
+        lastName: PropTypes.string.isRequired,
+        avatar: PropTypes.string.isRequired,
+        role: PropTypes.string.isRequired,
+        team: PropTypes.string.isRequired,
+        biography: PropTypes.string.isRequired,
+        keySkills: PropTypes.arrayOf(React.PropTypes.shape({
+            name: PropTypes.string.isRequired
+        })),
+        recentProjects: PropTypes.arrayOf(React.PropTypes.shape({
+            name: PropTypes.string.isRequired
+        }))
+    })
 }
 
 export default EmployeeListItem
 ```
 
-In this example I have sat that there will be an `object` and i have also defined that is required. If the 
-component doesn't recieve the prop or its the wrong type/shape then an error will show in the browser console.
+In this example I have said that there will be an `object` and I have also defined that is required. If the 
+component doesn't receive the prop or its the wrong type/shape then an error will show in the browser console.
 
 ## Passing the props in
 
@@ -132,7 +152,7 @@ through props like this:
 
 ## Multiple Locations
 
-In `step-5` I was only showing one employee, in `step-5-1` I have made use of the es2015 `array.map()` function
+In `step-5` I was only showing one employee, in `step-5-1` I have made use of the ES2015 `array.map()` function
 to loop through each item in the employee and render an `EmployeeListItem`.
 
 ``` javascript
