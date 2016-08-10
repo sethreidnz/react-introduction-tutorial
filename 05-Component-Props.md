@@ -35,7 +35,7 @@ export default App
 ```
 **Using a pure function and parameter deconsstruction**
 
-```
+``` javascript
 // without using the es6 paramter deconstructor syntax
 const MyComponent = (props) => (
     <div>
@@ -143,9 +143,8 @@ to loop through each item in the employee and render an `EmployeeListItem`.
 </ul>
 ```
 
-Notice how I have added a `key` prop to my LocationCard component. This is an internal React requirement that allows it to
+Notice how I have added a `key` prop to the `EmployeeListItem` component. This is an internal React requirement that allows it to
 more efficiently track changes in the state of your application. It just needs to be a unique identifier for each
 item in the collection.
 
 Next step - [Nesting Components](06-Nesting-Components.md)
-
