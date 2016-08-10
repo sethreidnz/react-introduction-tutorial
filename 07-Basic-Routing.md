@@ -4,10 +4,10 @@ Basic Routing
 git checkout step-7
 ```
 
-So far we have only had one page, the list of employees. I need to be able to use the `View C.V.` 
-buttons and see the profile of the employee. To do this we need to introduce some sort of routing. 
-We could write our own, since React is not a framework its a library it doesn't come bundled with a pre-packaged solution.
-But there is alerady a great one called [React Router](https://github.com/reactjs/react-router) that is
+So far we have only had one page, the list of employees. I need to be able to click the `View C.V.` 
+button to see the profile of the employee. To do this we need to introduce some sort of routing. 
+We could write our own, since React is not a framework, its a library, so it doesn't come bundled with a pre-packaged solution.
+But there is already a great one called [React Router](https://github.com/reactjs/react-router) that is
 widely used and extremely powerful.
 
 The Router that you get in React Router is a component itself. It can take props just like
@@ -39,7 +39,7 @@ URLs. You can also use a hash based url system as well for legacy support.
 
 ## The Route component
 
-The route component can take a path (the relative url), a component or a list of named components components
+The route component can take a path (the relative url), a component or a list of named components
 and a number of other properties. It is used to declaritively define route configurations.
 
 ## Creating a Route component
@@ -48,7 +48,7 @@ and a number of other properties. It is used to declaritively define route confi
 git checkout step-7-1
 ```
 
-I could create a new file `src/route.js` and defined a route configuration and exported it as the default export.
+I have created a new file `src/route.js` and defined a route configuration and exported it as the default export.
 
 ``` javascript
 
