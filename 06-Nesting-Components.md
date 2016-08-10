@@ -67,7 +67,7 @@ This is equivilent to writing
 </EmployeeList>
 ```
 
-The parent component will recieve the array of components as `props.children`. However if there is only
+The parent component will receive the array of components as `props.children`. However if there is only
 one component it will receive the component itself without the array wrapper for performance reasons.
 
 Now that I have shown you how to nest components. What if we want to switch between?
