@@ -137,7 +137,7 @@ EmployeeListItem.propTypes = {
 export default EmployeeListItem
 ```
 
-In this example I have sat that there will be an `object` and i have also defined that is required. If the 
+In this example I have said that there will be an `object` and i have also defined that is required. If the 
 component doesn't receive the prop or its the wrong type/shape then an error will show in the browser console.
 
 ## Passing the props in
