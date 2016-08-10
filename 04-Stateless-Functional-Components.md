@@ -1,11 +1,11 @@
 # Stateless Function Components
 
 ```
-git checkout step-2
+git checkout step-4
 ```
 
 A well established pattern in developing scalable React apps is creating a separation between presentational components and container components. This can be 
-thought of also as 'dumb' and 'smart' components.
+thought of as 'dumb' and 'smart' components.
 
 **Container** components are responsible for things like orchestrating user interaction, initiating and retrieving the data among other view logic related things. 
 While **presentation** components are simple pure functions that take the current state and create a rendered representation of it.
@@ -35,7 +35,7 @@ export default EmployeeListItem
 
 This is a `stateless functional component` which means it is just a function that returns a component hierarchy to render.
 These types of components are pure functions of the current state. In the above example we are just returning some static
-markup but using what React calls `props` and you can see more about these in the [next step]() but lets quickly 
+markup but using what React calls `props`; you will see more about these in the [next step]() but first lets quickly 
 look at how we can use this component in our `App` component.
 
 
@@ -81,6 +81,6 @@ class App extends Component {
 export default App
 ```
 
-But we only have one employee now. We'll fix this in the next step.
+As you can see we only have one employee now. We will fix this in the next step.
 
 Next Step - [Component Props](05-Component-Props.md)
