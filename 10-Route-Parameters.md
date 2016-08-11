@@ -4,7 +4,7 @@
 git checkouts step-10
 ```
 
-First things first I need to create the container component for my employee profile page. I have created
+First things first, I need to create the container component for my employee profile page. I have created
 the file `src/containers/EmployeeProfile`. My bare bones `EmployeeProfile` looks like this:
 
 ``` javascript
@@ -29,7 +29,7 @@ git checkout step-10-1
 ```
 
 I have now added the HTML from the static version (updated to work with JSX). Now how do we make this a dynamic view like
-we did with the dashboard? We need to use the `route params` to get the `employeeId` from the route and then get the select employee.
+we did with the dashboard? We need to use the `route params` to get the `employeeId` from the route and then get the selected employee.
 
 ## Route Params
 
@@ -51,13 +51,13 @@ constructor({params}){
 ```
 
 Here I am getting the `params` object from the props passed into the component. This params is an object hash representation
-of the parameters in the path of the route. In this case we have `employeeId` as a parameter set in the route pate `path='employee/:employeeId'`. I am
+of the parameters in the path of the route. In this case we have `employeeId` as a parameter set in the route path `path='employee/:employeeId'`. I am
 also modifying the components state.
 
 ## Component state
 
 Each class based component (not pure functional stateless ones) has its own local isolated state. You can access this state via `this.state`. The correct place to set initial
-state is as I have in the constructor. If you want to change it anywhere else you should use the `this.setState` function and not directly access to the state. application
+state is in the constructor as I have in the code example. If you want to change it anywhere else you should use the `this.setState` function and not directly access the state. Application
 state is a big topic and this tutorial doesn't really delve into it much, just enough to show you how React works.
 
 In the above example I am setting the state equal to an object that has a key `employee`. I am setting `employee` equal to the result of my call to `getEmployee` using the `employeeId` param
@@ -132,4 +132,4 @@ class EmployeeProfile extends Component {
 export default EmployeeProfile
 ```
 
-Next Step = 
+Next Step - [Conclusion](11-Conclusion.md)
