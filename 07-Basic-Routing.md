@@ -34,6 +34,7 @@ ReactDOM.render(
 
 Here we have imported the `Router` component, the `Route` component and `browserHistory` from React Router.
 The Router is the root component while the Route component is used to describe each of the routes in your app.
+
 Here we have passed in browserHistory to the Router component which will mean we are using HTML5 history API
 URLs. You can also use a hash based url system as well for legacy support.
 
