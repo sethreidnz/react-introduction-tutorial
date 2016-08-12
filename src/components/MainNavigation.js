@@ -15,7 +15,7 @@ class MainNavigation extends Component{
                             <li><a href="#">My Profile</a></li>
                             <li><a href="#">Settings</a></li>
                         </ul>
-                        <ul id="MainNavigationCollapse" className="side-nav">
+                        <ul className="side-nav">
                             <li className="active"><a href="#">Employees</a></li>
                             <li><a href="#">My Profile</a></li>
                             <li><a href="#">Settings</a></li>
