@@ -20,7 +20,7 @@ class MainNavigation extends Component{
                 <div className="nav-wrapper black">
                     <div className="container">
                         <a href="#!" className="brand-logo">Employee CV Manager</a>
-                        <a onClick={() => this.toggleSideNav()} data-activates="MainNavigationCollapse" className="button-collapse">
+                        <a onClick={() => this.toggleSideNav()} className="button-collapse">
                             <i className="material-icons">menu</i>
                         </a>
                         <ul className="main-navigation right hide-on-med-and-down">
