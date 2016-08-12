@@ -13,7 +13,7 @@ class MainNavigation extends Component{
                 <div className="nav-wrapper black">
                     <div className="container">
                         <a href="#!" className="brand-logo">Employee CV Manager</a>
-                        <a onClick={() => console.log('clicked')} data-activates="MainNavigationCollapse" className="button-collapse">
+                        <a className="button-collapse">
                             <i className="material-icons">menu</i>
                         </a>
                         <ul className="main-navigation right hide-on-med-and-down">
@@ -21,7 +21,7 @@ class MainNavigation extends Component{
                             <li><a href="#">My Profile</a></li>
                             <li><a href="#">Settings</a></li>
                         </ul>
-                        <ul className="side-nav" id="MainNavigationCollapse">
+                        <ul id="MainNavigationCollapse" className="side-nav">
                             <li className="active"><a href="#">Employees</a></li>
                             <li><a href="#">My Profile</a></li>
                             <li><a href="#">Settings</a></li>
