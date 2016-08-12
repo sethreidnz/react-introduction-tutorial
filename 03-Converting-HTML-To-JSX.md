@@ -4,8 +4,8 @@
 git checkout step-3
 ```
 
-Converting out HTML into JSX is pretty straight forward. The main things you need to watch out for is `class` becoming `className` and making sure you always close your tags. Also
-in the `render` method you must have only one root component.
+Converting out HTML into JSX is pretty straight forward. The main things you need to watch out for is `class` becoming `className` and making sure you always close your tags. Also remember
+in the `render` method you can only have only one root component.
 
 Now if you look in `src/App.js` you will see this:
 
@@ -70,6 +70,6 @@ or how to configure it. For now you will see that I have imported the `index.css
 import './index.css';
 ```
 
-That's it! In the next step we will start breaking this HTML into components.
+That's it! Now my css will be bundled up with my JavaScript. In the next step we will start breaking this HTML into components.
 
 Next Step - [Stateless Functional Components](04-Stateless-Functional-Components.md)
