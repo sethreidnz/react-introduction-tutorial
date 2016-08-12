@@ -82,6 +82,6 @@ class App extends Component {
 export default App
 ```
 
-As you can see we only have one employee now instead of a list. We will fix this in the next step.
+But now we only have one employee now instead of a list. Lets fix that.
 
 Next Step - [Component Props](05-Component-Props.md)
