@@ -15,6 +15,11 @@ class MainNavigation extends Component{
         console.log(`this.sideNavShow: ${this.state.sideNavShow}`)
     }
     render(){
+        const sideNavClasses = classNames({
+            'side-nav': true,
+            'side-nav-show': this.state.sideNavShow,
+            'side-nav-hide': !this.state.sideNavShow
+        })
          return (
             <nav>
                 <div className="nav-wrapper black">
