@@ -12,7 +12,7 @@ into your JavaScript. Where other frameworks bring JavaScipt to HTML, React brin
 For example instead of doing something like this as you would in Angular:
 
 ``` javascript
-var myApp = angular.module('spicyApp1', []);
+var myApp = angular.module('app', []);
 myApp.controller('HelloWorldController', ['$scope', function($scope) {
     $scope.message = 'Hello Word!';
 }]);
