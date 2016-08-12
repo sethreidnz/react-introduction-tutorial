@@ -1,13 +1,19 @@
 import React, { Component } from 'react'
 
 class MainNavigation extends Component{
+    constructor(){
+        super()
+        this.state = {
+            sideNavVisible: false
+        }
+    }
     render(){
          return (
             <nav>
                 <div className="nav-wrapper black">
                     <div className="container">
                         <a href="#!" className="brand-logo">Employee CV Manager</a>
-                        <a href="#" data-activates="MainNavigationCollapse" className="button-collapse">
+                        <a onClick={() => console.log('clicked')} data-activates="MainNavigationCollapse" className="button-collapse">
                             <i className="material-icons">menu</i>
                         </a>
                         <ul className="main-navigation right hide-on-med-and-down">
