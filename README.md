@@ -25,7 +25,7 @@ Each step of the tutorial will have the git command that you need to see the cod
 5. [Component Props](05-Component-Props.md)
 6. [Nesting Components](06-Nesting-Components.md)
 7. [Basic Routing](07-Basic-Routing.md)
-8. [Advanced Routing](08-Advanced-Routing.md)
+8. [More Routing](08-More-Routing.md)
 9. [Link Component](09-Link-Component.md)
 10. [Route Parameters](10-Route-Parameters.md) 
 11. [Local Component State](11.Local-Component-State.md)
