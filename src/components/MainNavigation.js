@@ -10,7 +10,6 @@ class MainNavigation extends Component{
         this.toggleSideNav.bind(this)
     }
     toggleSideNav(){
-        debugger
         this.setState({
             sideNavShow: !this.state.sideNavShow
         })
