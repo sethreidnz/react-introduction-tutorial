@@ -1,12 +1,13 @@
 # Introduction to React
 
 This repository has been created as an introduction to the main features of [React](https://facebook.github.io/react/) 
-and [React Router](https://github.com/reactjs/react-router). It was created using the [Create React App](https://github.com/facebookincubator/create-react-app)
+and [React Router](https://github.com/reactjs/react-router). It was created using the [Create React App](https://github.com/facebookincubator/create-react-app).
 
-This tutorial has a git repository that you can find the setup instructions in the [README here](https://github.com/justsayno/react-introduction).
+This tutorial has a git companion git repository with the code I am explaining. 
+You can find the setup instructions in the [README here](https://github.com/justsayno/react-introduction).
 
-Although not required you can follow the code changes in each step on your local machine by cloning the repository and checkout out the 
-branch that corresponds to the step in the tutorial. For example to go to the beginning run the following in a command window:
+Although not required you can follow the code changes made in each step on your local machine by cloning the repository and switching between the different 
+branches that correspond to the steps in the tutorial. For example to go to the beginning run the following in a command window:
 
 ``` shell
 git checkout step-0

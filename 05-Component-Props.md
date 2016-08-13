@@ -35,8 +35,7 @@ export default App
 ```
 **Using a pure function taking props as an argument **
 
-```
-// without using the es6 paramter deconstructor syntax
+``` javascript
 const MyComponent = (props) => (
     <div>
         {props.myProp}
@@ -54,7 +53,7 @@ const MyComponent = ({myProp}) => (
 )
 ```
 
-**same again with more than other prop key**
+**same again with more than one prop key**
 
 ```
 const MyComponent = ({myProp, myOtherProp}) => (
@@ -94,7 +93,7 @@ git checkout step-5-1
 ```
 
 React has a utility called `PropTypes` which can be used to define what a component expects to get as `props`. This can be JavaScript primitives like `string, object, number`
-or they can be 'shapes' which are constructed using object literals and the function `PropTypes.shapeOf()`. You can also make props required using `isRequire()`. This tutorial 
+or they can be 'shapes' which are constructed using object literals and the function `PropTypes.shapeOf()`. You can also make props required using `isRequired`. This tutorial 
 won't go into great detail on PropTypes but they are very powerful and word pointing out.
 
 You can add PropTypes to any kind of component (function component, class component etc). This is how I have added it to my `EmployeeListItem` component:
@@ -137,7 +136,7 @@ EmployeeListItem.propTypes = {
 export default EmployeeListItem
 ```
 
-In this example I have sat that there will be an `object` and i have also defined that is required. If the 
+In this example I have said that there will be an `object` and I have also defined that it is required. If the 
 component doesn't receive the prop or its the wrong type/shape then an error will show in the browser console.
 
 ## Passing the props in
@@ -164,9 +163,8 @@ to loop through each item in the employee and render an `EmployeeListItem`.
 </ul>
 ```
 
-Notice how I have added a `key` prop to my `LocationCard` component. This is an internal React requirement that allows it to
+Notice how I have added a `key` prop to the `EmployeeListItem` component. This is an internal React requirement that allows it to
 more efficiently track changes in the state of your application. It just needs to be a unique identifier for each
 item in the collection.
 
 Next step - [Nesting Components](06-Nesting-Components.md)
-

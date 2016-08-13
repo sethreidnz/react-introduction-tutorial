@@ -1,11 +1,11 @@
 # Converting our HTML
 
 ``` shell
-git checkout step-2
+git checkout step-3
 ```
 
-Converting out HTML into JSX is pretty straight forward. The main things you need to watch out for is `class` becoming `className` and making sure you always close your tags. Also
-in the `render` method must have only one root component.
+Converting out HTML into JSX is pretty straight forward. The main things you need to watch out for is `class` becoming `className` and making sure you always close your tags. Also remember
+in the `render` method you can only have only one root component.
 
 Now if you look in `src/App.js` you will see this:
 
@@ -59,17 +59,17 @@ Now if you load the app in the browser with `npm start` then you will see it loo
 
 ## Importing css styles
 
-On other thing we did here to get this working is included a new file `index.css` which has all our css for the application. In a larger React app you would split this css 
+One other thing we did here to get this working is include a new file named `index.css` which has all our css for the application. In a larger React app you would split this css 
 out by feature or component but we are just going to keep it all in one file for now. This was being loaded in our static html via a `<link>` tag.
 
-The interesting thing to note is **how** I I have included the css in the JavaScript. The project build system is using [Webpack](https://webpack.github.io/) under the hood Webpack is 
-a an extremely powerful module bundler which can be extended to load all sorts of files and inline them into your JavaScript. This tutorial is not concerned with HOW Webpack does this, 
-or how to configure it but the following I have imported the `index.css` styles into my app at the top of `index.js`:
+The interesting thing to note is **how** I have included the css in the JavaScript. The project build system is using [Webpack](https://webpack.github.io/) under the hood. Webpack is 
+an extremely powerful module bundler which can be extended to load all sorts of files and inline them into your JavaScript. This tutorial is not concerned with HOW Webpack does this, 
+or how to configure it. For now you will see that I have imported the `index.css` styles into my app at the top of `index.js`:
 
 ```
 import './index.css';
 ```
 
-That's it! In the next step we will start breaking this HTML into components.
+That's it! Now my css will be bundled up with my JavaScript. In the next step we will start breaking this HTML into components.
 
 Next Step - [Stateless Functional Components](04-Stateless-Functional-Components.md)

@@ -5,14 +5,13 @@ git checkout step-6
 ```
 
 When building a React application you go through a process of nesting components within components. This 
-results in a component heirarchy. Although it may not have been obvious we have been already doing This
+results in a [component heirarchy](https://facebook.github.io/react/docs/thinking-in-react.html). If you think about what we have already done we have been doing this
 with our `App` component and our nested HTML components (in React the html elements are essentailly components)
 and out `EmployeeListItem` component.
 
 ## Chilren and component nesting
 
-When you have a component and nest another component inside of it you are creating a parent -> child relationship.
-Take this JSX snippit:
+When you nest one component inside another you are creating a parent -> child relationship. Take this JSX snippet:
 
 ``` javasciprt
 <EmployeeList>
@@ -20,8 +19,8 @@ Take this JSX snippit:
 </EmployeeList>
 ```
 
-I have created an EmployeeList component which I have nested my EmployeeListItem into. What this does is gives the 
-EmployeeList component access to its `children` as the `props.children` key on the props passed to it.
+I have created an EmployeeList component which I have nested my EmployeeListItem into. Every component has a 'children' key on its `props`. 
+EmployeeList component access to  its `children` as the `props.children` key on the props passed to it.
 
 If you look at the `EmployeeList` component it now uses this to render the children in its output:
 
