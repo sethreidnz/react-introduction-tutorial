@@ -11,7 +11,6 @@ class EmployeeProfile extends Component {
     }
     render(){
         const { employee: { firstName, lastName, role, team, biography, avatar, keySkills, recentProjects } } = this.state
-        debugger
         return (
             <div>
                 <div className="col s12 m4">
