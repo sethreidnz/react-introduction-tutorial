@@ -26,7 +26,7 @@ ReactDOM.render(
 Instead of rendering our `Hello World` content directly in my `ReactDOM.render()` I am telling ReactDOM to render the `App` component
 exported from `src/App.js`. This is our root component and it looks like this:
 
-```
+``` javascript
 import React, { Component } from 'react'
 
 class App extends Component {

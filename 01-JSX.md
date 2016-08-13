@@ -7,9 +7,9 @@ git checkout step-1
 ```
 
 React uses an extended version of JavaScript called JSX. It basically just lets you put html-like markup
-into your JavaScript. Where other frameworks bring JavaScipt to HTML, React brings HTML to JavaScript.
+into your JavaScript. Where other frameworks bring JavaScipt to HTML; React brings HTML to JavaScript.
 
-For example instead of doing something like this as you would in Angular:
+For example instead of doing something like this as you would in Angular 1.x:
 
 ``` javascript
 var myApp = angular.module('app', []);
@@ -36,25 +36,27 @@ ReactDOM.render(
 
 ```
 
-This is an extremely simplistic example of JSX and you will see more as we go along. As you can see you can place HTML tags but you can also place your own custom components 
-as JSX as well (more on this later)
+This is an extremely simplistic example of JSX and you will see more as we go along. You've probably notice you can place HTML tags but you can also place your own custom components 
+as JSX as well (more on this later).
 
 The main thing to note is that for some of the html attributes the name deviates from the name in html. This is because the React team decided to 
-use the [JavaScript DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) names because it already existed and was in camel case which 
-makes it a lot easier to use in JavaScript (html is snake case).
+use the [JavaScript DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) names for various reasons least of which was
+the fact that HTML uses camel casing which is not really ideal in JavaScript.
 
 One of the most obvious ones is `class` becomes `className`. For more JSX Gotchas have a look at [this article](https://facebook.github.io/react/docs/jsx-gotchas.html).
 
 ## Why JSX?
 
-Having our markup in our Javascript has a number of great advantages that are summed up really well in Corey House's post [React’s JSX: The Other Side of the Coin](https://medium.com/@housecor/react-s-jsx-the-other-side-of-the-coin-2ace7ab62b98#.a4ktqckxa). Some of the key benefits include:
+Having our markup in our Javascript has a number of great advantages that are summed up really well in Corey House's post
+[React’s JSX: The Other Side of the Coin](https://medium.com/@housecor/react-s-jsx-the-other-side-of-the-coin-2ace7ab62b98#.a4ktqckxa). Some of the key benefits include:
 
 - Quick to fail. When there is an error in your JSX there will be compile issues and it will break with a clear error message.
 - Leverage the power of JavaScript. Everything is JavaScript and you can use anything that is JavaScript to manipulate your rendered HTML.
 - No propriety API for template logic. Everything is simply plain JavaScript with an HTML like syntax embedded in it.
-- Less context switching. No need to have loosely coupled HTML and JavaScript where you don't know what relies on what attribute or value.
+- Less context switching. No need to have loosely coupled (but tightly coupled...) HTML and JavaScript where you don't know what relies on what attribute or value.
 
-All that being said I can see some downsides. The most convincing one is the deviation from open web standards. Other templating engines used in other frameworks do exactly the same thing (just in their html) so I don't really see this as a huge issue.
+All that being said I can see some downsides. The most convincing one for me is the fact that it deviates from open web standards. However other templating engines used in 
+other frameworks do exactly the same thing they just do it in the html.
 
 You can read more about JSX [here in Facebook's in depth guide](https://facebook.github.io/react/docs/jsx-in-depth.html).
 
