@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { getEmployee } from '../api/employees'
 
 class EmployeeProfile extends Component {
@@ -56,6 +56,10 @@ class EmployeeProfile extends Component {
         </div>
         )
     }
+}
+
+EmployeeProfile.PropTypes = {
+    params: PropTypes.object
 }
 
 export default EmployeeProfile
