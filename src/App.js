@@ -26,7 +26,9 @@ class App extends Component {
         <div className="col s12 m7">
             <h3>Current Employees</h3>
             <ul className="collection">
-              <EmployeeListItem employee={employees[0]} />
+               {employees.map((employee) => {
+                  return <EmployeeListItem key={employee.id} employee={employee} />
+                })}
             </ul>
         </div>
       </div>
