@@ -28,3 +28,4 @@ Each step of the tutorial will have the git command that you need to see the cod
 8. [Advanced Routing](08-Advanced-Routing.md)
 9. [Link Component](09-Link-Component.md)
 10. [Route Parameters](10-Route-Parameters.md) 
+11. [Local Component State](11.Local-Component-State.md)
