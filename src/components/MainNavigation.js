@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
+import onClickOutside from 'react-onclickoutside'
 
 class MainNavigation extends Component{
     constructor(){
@@ -10,9 +11,13 @@ class MainNavigation extends Component{
         this.toggleSideNav.bind(this)
     }
     toggleSideNav(){
-        debugger
         this.setState({
             sideNavShow: !this.state.sideNavShow
+        })
+    }
+    handleClickOutside(){
+        this.setState({
+            sideNavShow: false
         })
     }
     render(){
@@ -46,4 +51,4 @@ class MainNavigation extends Component{
     }
 }
 
-export default MainNavigation
+export default onClickOutside(MainNavigation)
