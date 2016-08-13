@@ -34,7 +34,7 @@ class EmployeeProfile extends Component {
                                 <h5 className="profile-name">Key Skills and Technologies</h5>
                                 <ul className="collection">
                                     {keySkills.map((skill) => (
-                                        <li className="collection-item">{skill.name}</li>
+                                        <li key={skill.name} className="collection-item">{skill.name}</li>
                                     ))}
                                 </ul>
                             </div>
@@ -49,7 +49,7 @@ class EmployeeProfile extends Component {
                 <h5>Recent Projects</h5>
                 <ul className="collection">
                     {recentProjects.map((project) => (
-                        <li className="collection-item">{project.name}</li>
+                        <li key={project.name} className="collection-item">{project.name}</li>
                     ))}
                 </ul>
             </div>
