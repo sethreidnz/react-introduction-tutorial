@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import classNames from 'classnames'
 
 class MainNavigation extends Component{
     constructor(){
@@ -9,10 +10,10 @@ class MainNavigation extends Component{
         this.toggleSideNav.bind(this)
     }
     toggleSideNav(){
+        debugger
         this.setState({
             sideNavShow: !this.state.sideNavShow
         })
-        console.log(`this.sideNavShow: ${this.state.sideNavShow}`)
     }
     render(){
         const sideNavClasses = classNames({
@@ -33,7 +34,7 @@ class MainNavigation extends Component{
                             <li><a href="#">My Profile</a></li>
                             <li><a href="#">Settings</a></li>
                         </ul>
-                        <ul className="side-nav">
+                        <ul className={sideNavClasses}>
                             <li className="active"><a href="#">Employees</a></li>
                             <li><a href="#">My Profile</a></li>
                             <li><a href="#">Settings</a></li>

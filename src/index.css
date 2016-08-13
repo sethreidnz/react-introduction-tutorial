@@ -21,3 +21,12 @@ nav ul li.active a{
 .profile-role, profile-team, label{
     display: block;
 }
+
+.side-nav-show{
+    transform: translate(0);
+    transition: all 1s ease-in-out;
+}
+.side-nav-hide{
+    transform: translateX(-100%);
+    transition: all 1s ease-in-out;
+}
