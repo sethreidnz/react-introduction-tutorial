@@ -22,7 +22,7 @@ import EmployeeListItem from '../components/EmployeeListItem'
 class EmployeeDashboard extends Component {
   render() {
     return (
-      <div className="employee-dashboard">
+      <div className="employee-dashboard col m12 l7">
             <EmployeeList>
              {employees.map((employee) => {
                 return <EmployeeListItem key={employee.id} employee={employee} />
@@ -35,8 +35,9 @@ class EmployeeDashboard extends Component {
 
 export default EmployeeDashboard
 
+
 ```
-Just a simple class based component that renderes a `div` with a the `EmployeeList` in it.
+Just a simple class based component that renders a `div` with a the `EmployeeList` in it.
 
 Then in routes.js where I have defined my routes.
 
@@ -61,7 +62,7 @@ const Routes = () => (
 export default Routes
 ```
 
-Here we use the nesting of the Route components to describe the heirarchy of our routes. In this case we have main router
+Here we use the nesting of the Route components to describe the hierarchy of our routes. In this case we have main router
 that will render our root `App` component. Then as a child Route of this we have a new component `IndexRoute` to 
 define our location list route. This IndexRoute component defines the default route if there are no other matches.
 

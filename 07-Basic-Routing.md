@@ -23,25 +23,24 @@ import { Router, Route, browserHistory  } from 'react-router'
 import App from './App'
 
 ReactDOM.render(
-  <Router history={browserHistory }>
+  <Router history={browserHistory}>
     <Route path="/" component={App}/>
   </Router>,
   document.getElementById('root')
 )
-
 
 ```
 
 Here we have imported the `Router` component, the `Route` component and `browserHistory` from React Router.
 The Router is the root component while the Route component is used to describe each of the routes in your app.
 
-We have alos passed in browserHistory to the Router component as the `history` prop which will make the Router use HTML5 history API
+We have also passed in browserHistory to the Router component as the `history` prop which will make the Router use HTML5 history API
 URLs. You can also use a hash based url system as well for legacy support using `hashHistory`.
 
 ## The Route component
 
-The route component can take a path (the relative url), a component or a list of named components components
-and a number of other properties. It is used to declaritively define route configurations.
+The route component can take a path (the relative url), a component or a list of named components
+and a number of other properties. It is used to declaratively define route configurations.
 
 ## Creating a Route component
 
@@ -49,7 +48,7 @@ and a number of other properties. It is used to declaritively define route confi
 git checkout step-7-1
 ```
 
-I could create a new file `src/route.js` and defined a route configuration and exported it as the default export.
+I have created a new file `src/route.js` and defined a route configuration and exported it as the default export.
 
 ``` javascript
 
@@ -69,5 +68,5 @@ export default Routes
 
 ```
 
-Next step - [Advanced Routing](08-Advanced-Routing.md)
+Next step - [More Routing](08-More-Routing.md)
 

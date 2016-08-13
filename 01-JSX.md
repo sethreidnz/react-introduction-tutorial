@@ -60,4 +60,13 @@ other frameworks do exactly the same thing they just do it in the html.
 
 You can read more about JSX [here in Facebook's in depth guide](https://facebook.github.io/react/docs/jsx-in-depth.html).
 
+## Virtual DOM
+
+Along side the idea of JSX is the [Virtual DOM](https://facebook.github.io/react/docs/glossary.html). This is how React manages state change and mutation.
+You JSX is turned into an in-memory virtual representation which is used to create the actual HTML. When a change occurs in the state of your application
+React first re-creates it's in-memory version of the DOM and then figures out the fastest way to turn the old HTML into what the new HTML needs to look like.
+
+Each element in your JSX, be it a `<div>` or a `<CustomComponent />` is a `ReactElement`. "A `ReactElement` is a light, stateless, immutable, virtual representation 
+of a `DOM Element`. It is a `virtual DOM`."
+
 Next step - [First Component](02-First-Component.md)

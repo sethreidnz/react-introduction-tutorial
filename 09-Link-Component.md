@@ -13,6 +13,9 @@ The `Link` component is another component from React Router that lets you create
 Or the case of my list of employees I have added a link to the `EmployeeListItem` component:
 
 ``` javascript
+import React, { PropTypes } from 'react'
+import { Link } from 'react-router'
+
 const EmployeeListItem = ({employee}) => (
     <li className="collection-item avatar">
         <img src={employee.avatar} alt={employee.name} className="circle" />

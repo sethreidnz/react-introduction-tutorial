@@ -51,85 +51,16 @@ constructor({params}){
 ```
 
 Here I am getting the `params` object from the props passed into the component. This params is an object hash representation
-of the parameters in the path of the route. In this case we have `employeeId` as a parameter set in the route pate `path='employee/:employeeId'`. I am
-also modifying the components state.
+of the parameters in the path of the route. In this case we have `employeeId` as a parameter set in the route pate `path='employee/:employeeId'`.
 
-## Component state
+I use this employeeId to retrieve the employee we are displaying and then I then set the initial state of the component to include that employee. This is a very simplistic
+way of managing state in your application using the components local state. I can then access this in my render function using:
 
-Each class based component (not pure functional stateless ones) has its own local isolated state. You can access this state via `this.state`. The correct place to set initial
-state is as I have in the constructor. If you want to change it anywhere else you should use the `this.setState` function and not directly access to the state. application
-state is a big topic and this tutorial doesn't really delve into it much, just enough to show you how React works.
-
-In the above example I am setting the state equal to an object that has a key `employee`. I am setting `employee` equal to the result of my call to `getEmployee` using the `employeeId` param
- from the `route params`. In a more serious application you would use a state management system like [Redux](https://github.com/reactjs/redux) to manage this but I am using a mock API to make the example clearer.
-
-Inside my render function I use the object deconstructor to get all the required fields out of `this.state.employee` that was set in the components constructor. This profile 
-container should probably be broken up into more components, but we will do that shortly. Have a look at how we can so easily replace all our static content with dynamic content
-using plain JavaScript functions like .map and template literals.
-
+``` javascript
+const { employee: { firstName, lastName, role, team, biography, avatar, keySkills, recentProjects } } = this.state
 ```
-import React, { Component } from 'react'
-import { getEmployee } from '../api/employees'
 
-class EmployeeProfile extends Component {
-    constructor({params}){
-        super()
-        const employee = getEmployee(params.employeeId)
-        this.state = {
-            employee: employee
-        }
-    }
-    render(){
-        const { employee: { firstName, lastName, role, team, biography, avatar, keySkills, recentProjects } } = this.state
-        debugger
-        return (
-            <div>
-                <div className="col s12 m4">
-                    <div className="row">
-                        <div className="profile">
-                            <div className="col s12 m6 profile-picture">
-                                <img src={avatar} alt="" />
-                            </div>
-                            <div className="col s12 m6 profile-details">
-                                <h5 className="profile-name">{firstName} {lastName}</h5>
-                                <label>Role</label>
-                                <span className="profile-role">{role}</span>
-                                <label>Team</label>
-                                <span className="profile-team">{team}</span>
-                            </div>
-                        </div>           
-                    </div>
-                    <div className="row">
-                        <div className="profile">
-                            <div className="col s12 m12 profile-details">
-                                <h5 className="profile-name">Key Skills and Technologies</h5>
-                                <ul className="collection">
-                                    {keySkills.map((skill) => (
-                                        <li className="collection-item">{skill.name}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>           
-                    </div>
-            </div>
-            <div className="col s12 m8">
-                <h5>Biography</h5>
-                <p>
-                    {biography}
-                </p>
-                <h5>Recent Projects</h5>
-                <ul className="collection">
-                    {recentProjects.map((project) => (
-                        <li className="collection-item">{project.name}</li>
-                    ))}
-                </ul>
-            </div>
-        </div>
-        )
-    }
-}
-
-export default EmployeeProfile
-```
+I deconstruct my employee and its properties our of `this.state`. In the next step I am going to explain a lot more about local
+component state.
 
 Next step - [Local Component State](11.Local-Component-State.md)

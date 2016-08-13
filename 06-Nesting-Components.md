@@ -13,7 +13,7 @@ and out `EmployeeListItem` component.
 
 When you nest one component inside another you are creating a parent -> child relationship. Take this JSX snippet:
 
-``` javasciprt
+``` javascript
 <EmployeeList>
     <EmployeeListItem />
 </EmployeeList>
@@ -54,7 +54,7 @@ Nesting our EmployeeListItems like this:
 
 ```
 
-This is equivilent to writing
+This is equivalent to writing
 
 ```
 

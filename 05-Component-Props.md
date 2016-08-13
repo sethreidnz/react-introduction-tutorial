@@ -66,7 +66,7 @@ const MyComponent = ({myProp, myOtherProp}) => (
 
 As you can see above you can render values from variables by putting them inside `{}`'s using the same syntax as
 [Template Literals in ES2015](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Template_literals). 
-This can be seen in the above examples and in our app in the `EmployeeListItem` component:
+This can be seen in the above examples and in our app in the `EmployeeListItem` component in the `step-5` branch:
 
 ``` javascript
 
@@ -92,7 +92,7 @@ const EmployeeListItem = ({employee}) => (
 git checkout step-5-1
 ```
 
-React has a utility called `PropTypes` which can be used to define what a component expects to get as `props`. This can be JavaScript primitives like `string, object, number`
+React has a utility called `PropTypes` which can be used to define what a component expects to get as `props`. These can be JavaScript primitives like `string`, `object`, `number` and `func`
 or they can be 'shapes' which are constructed using object literals and the function `PropTypes.shapeOf()`. You can also make props required using `isRequired`. This tutorial 
 won't go into great detail on PropTypes but they are very powerful and word pointing out.
 
@@ -150,9 +150,13 @@ through props like this:
 </ul>
 ```
 
-## Multiple Locations
+## Multiple Employees
 
-In `step-5` I was only showing one employee, in `step-5-1` I have made use of the ES2015 `array.map()` function
+```
+git checkout step-5-1
+```
+
+In `step-5` and `step-5-1` I was only showing one employee, in `step-5-1` I have made use of the ES2015 `array.map()` function
 to loop through each item in the employee and render an `EmployeeListItem`.
 
 ``` javascript
