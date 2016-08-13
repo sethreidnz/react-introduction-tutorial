@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import employees from './api/employees'
+import './index.css'
 
 // Components
 import EmployeeList from './components/EmployeeList'
