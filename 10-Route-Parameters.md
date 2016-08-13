@@ -132,4 +132,4 @@ class EmployeeProfile extends Component {
 export default EmployeeProfile
 ```
 
-Next Step = 
+Next step - [Local Component State](11.Local-Component-State.md)
