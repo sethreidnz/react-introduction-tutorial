@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './index.css'
 
 // Components
 import EmployeeListItem from './components/EmployeeListItem'
