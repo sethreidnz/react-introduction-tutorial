@@ -96,6 +96,7 @@ React has a utility called `PropTypes` which can be used to define what a compon
 or they can be 'shapes' which are constructed using object literals and the function `PropTypes.shapeOf()`. You can also make props required using `isRequired`. This tutorial 
 won't go into great detail on PropTypes but they are very powerful and word pointing out.
 
+
 You can add PropTypes to any kind of component (function component, class component etc). This is how I have added it to my `EmployeeListItem` component:
 
 ``` javascript

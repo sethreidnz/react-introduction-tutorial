@@ -9,7 +9,7 @@ results in a [component heirarchy](https://facebook.github.io/react/docs/thinkin
 with our `App` component and our nested HTML components (in React the html elements are essentailly components)
 and out `EmployeeListItem` component.
 
-## Chilren and component nesting
+## Children and component nesting
 
 When you nest one component inside another you are creating a parent -> child relationship. Take this JSX snippet:
 
@@ -69,6 +69,6 @@ This is equivalent to writing
 The parent component will receive the array of components as `props.children`. However if there is only
 one component it will receive the component itself without the array wrapper for performance reasons.
 
-Now that I have shown you how to nest components. What if we want to switch between?
+Now that I have shown you how to nest components. What if we want to switch between them?
 
 Next step - [Basic Routing](07-Basic-Routing.md)

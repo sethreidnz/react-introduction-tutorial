@@ -4,7 +4,7 @@
 git checkouts step-10
 ```
 
-First things first I need to create the container component for my employee profile page. I have created
+First things first, I need to create the container component for my employee profile page. I have created
 the file `src/containers/EmployeeProfile`. My bare bones `EmployeeProfile` looks like this:
 
 ``` javascript
@@ -29,7 +29,7 @@ git checkout step-10-1
 ```
 
 I have now added the HTML from the static version (updated to work with JSX). Now how do we make this a dynamic view like
-we did with the dashboard? We need to use the `route params` to get the `employeeId` from the route and then get the select employee.
+we did with the dashboard? We need to use the `route params` to get the `employeeId` from the route and then get the selected employee.
 
 ## Route Params
 
@@ -51,10 +51,21 @@ constructor({params}){
 ```
 
 Here I am getting the `params` object from the props passed into the component. This params is an object hash representation
-of the parameters in the path of the route. In this case we have `employeeId` as a parameter set in the route pate `path='employee/:employeeId'`.
+of the parameters in the path of the route. In this case we have `employeeId` as a parameter set in the route path `path='employee/:employeeId'`. I am
+also modifying the components state.
 
-I use this employeeId to retrieve the employee we are displaying and then I then set the initial state of the component to include that employee. This is a very simplistic
-way of managing state in your application using the components local state. I can then access this in my render function using:
+## Component state
+
+Each class based component (not pure functional stateless ones) has its own local isolated state. You can access this state via `this.state`. The correct place to set initial
+state is in the constructor as I have in the code example. If you want to change it anywhere else you should use the `this.setState` function and not directly access the state. Application
+state is a big topic and this tutorial doesn't really delve into it much, just enough to show you how React works.
+
+In the above example I am setting the state equal to an object that has a key `employee`. I am setting `employee` equal to the result of my call to `getEmployee` using the `employeeId` param
+ from the `route params`. In a more serious application you would use a state management system like [Redux](https://github.com/reactjs/redux) to manage this but I am using a mock API to make the example clearer.
+
+Inside my render function I use the object deconstructor to get all the required fields out of `this.state.employee` that was set in the components constructor. This profile 
+container should probably be broken up into more components, but we will do that shortly. Have a look at how we can so easily replace all our static content with dynamic content
+using plain JavaScript functions like .map and template literals.
 
 ``` javascript
 const { employee: { firstName, lastName, role, team, biography, avatar, keySkills, recentProjects } } = this.state

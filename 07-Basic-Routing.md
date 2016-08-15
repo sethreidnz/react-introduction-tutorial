@@ -4,10 +4,10 @@ Basic Routing
 git checkout step-7
 ```
 
-So far we have only had one page, the list of employees. I need to be able to use the `View C.V.` 
-buttons and see the profile of the employee. To do this we need to introduce some sort of routing. 
-We could write our own, since React is not a framework its a library it doesn't come bundled with a pre-packaged solution.
-But there is alerady a great one called [React Router](https://github.com/reactjs/react-router) that is
+So far we have only had one page, the list of employees. I need to be able to click the `View C.V.` 
+button to see the profile of the employee. To do this we need to introduce some sort of routing. 
+We could write our own, since React is not a framework, its a library, so it doesn't come bundled with a pre-packaged solution.
+But there is already a great one called [React Router](https://github.com/reactjs/react-router) that is
 widely used and extremely powerful.
 
 The Router that you get in React Router is a component itself. It can take props just like
