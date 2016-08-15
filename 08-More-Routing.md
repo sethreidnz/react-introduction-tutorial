@@ -4,10 +4,10 @@
 git checkout step-8
 ```
 
-Most app have some sort of navigation or some shared UI elements it quite useful to have a root component that acts as an outlet for showing 
+Most apps have some sort of navigation or some shared UI elements making it quite useful to have a root component that acts as an outlet for showing 
 different routes.
 
-I've done this in this step by creating a new folder `src/containers` where we put our new `EmployeeDashbaord`
+I've done this in this step by creating a new folder `src/containers` where we put our new `EmployeeDashboard`
 component which is going to be the new container component that will house our employee list component and be
 our index route component.
 
@@ -66,7 +66,7 @@ Here we use the nesting of the Route components to describe the hierarchy of our
 that will render our root `App` component. Then as a child Route of this we have a new component `IndexRoute` to 
 define our location list route. This IndexRoute component defines the default route if there are no other matches.
 
-I have also included a normal `Route` component for demonstration purposes giving a different path `'/dashbaord'` the the same container component
+I have also included a normal `Route` component for demonstration purposes giving a different path `'/dashboard'` then the same container component
 as the `IndexRoute`.
 
 We will cover more about routing (such as how to use parameters) in a step 10 but this is enough for basic routing needs.
