@@ -3,6 +3,7 @@
 ```
 git checkout step-0
 ```
+> If you want to follow along then follow the instructions in [the code repository](https://github.com/justsayno/react-introduction-code) to get started.
 
 I am starting with a static HTML version of an Employee C.V. Manager App designed to showcase the skills of individuals in the team. 
 It describes the projects each employee has been involved in and the technologies they are experts in. This is a good way to start a 
