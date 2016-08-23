@@ -4,7 +4,7 @@ This repository has been created as an introduction to the main features of [Rea
 and [React Router](https://github.com/reactjs/react-router). It was created using the [Create React App](https://github.com/facebookincubator/create-react-app).
 
 All the code for this tutorial is in a repository which allows you to follow along coding by switching between branches. 
-You can find the setup instructions in the [README here](https://github.com/justsayno/react-introduction).
+You can find the setup instructions in the [README here](https://github.com/justsayno/react-introduction-code).
 
 After you installed the packages and run the app you can set your repository to the beginning with this command:
 
