@@ -17,7 +17,7 @@ To see this in action run:
 npm run static
 ```
 
-This will launch your browser and you will see the static version of the site. If you click on the "View C.V."
+And open [http://localhost:8080/static](http://localhost:8080/static) and you will see the static version of the site. If you click on the "View C.V."
 button for the "Gabriella Boon" you will see the static html version of an employee profile page.
 
 ### Project structure
