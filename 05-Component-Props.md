@@ -65,7 +65,7 @@ const MyComponent = ({myProp, myOtherProp}) => (
 ```
 
 As you can see above you can render values from variables by putting them inside `{}`'s using the same syntax as
-[Template Literals in ES2015](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Template_literals). 
+[Template Literals in ES2015](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Template_literals).
 This can be seen in the above examples and in our app in the `EmployeeListItem` component in the `step-5` branch:
 
 ``` javascript
@@ -93,8 +93,8 @@ git checkout step-5-1
 ```
 
 React has a utility called `PropTypes` which can be used to define what a component expects to get as `props`. These can be JavaScript primitives like `string`, `object`, `number` and `func`
-or they can be 'shapes' which are constructed using object literals and the function `PropTypes.shapeOf()`. You can also make props required using `isRequired`. This tutorial 
-won't go into great detail on PropTypes but they are very powerful and word pointing out.
+or they can be 'shapes' which are constructed using object literals and the function `PropTypes.shapeOf()`. You can also make props required using `isRequired`. This tutorial
+won't go into great detail on PropTypes but they are very powerful and worth pointing out.
 
 
 You can add PropTypes to any kind of component (function component, class component etc). This is how I have added it to my `EmployeeListItem` component:
@@ -116,7 +116,7 @@ const EmployeeListItem = ({employee}) => (
     </li>
 )
 
-EmployeeListItem.propTypes = { 
+EmployeeListItem.propTypes = {
     employee: PropTypes.shape({
         id: PropTypes.string.isRequired,
         firstName: PropTypes.string.isRequired,
@@ -137,7 +137,7 @@ EmployeeListItem.propTypes = {
 export default EmployeeListItem
 ```
 
-In this example I have said that there will be an `object` and I have also defined that it is required. If the 
+In this example I have said that there will be an `object` and I have also defined that it is required. If the
 component doesn't receive the prop or its the wrong type/shape then an error will show in the browser console.
 
 ## Passing the props in
