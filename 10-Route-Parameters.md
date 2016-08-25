@@ -54,6 +54,22 @@ Here I am getting the `params` object from the props passed into the component. 
 of the parameters in the path of the route. In this case we have `employeeId` as a parameter set in the route path `path='employee/:employeeId'`. I am
 also modifying the components state.
 
+## Adding the route
+
+Finally I have added this component as a route into my `src/routes.js` file with a param `employeeId`:
+
+``` javascript
+const Routes = () => (
+    <Router history={browserHistory }>
+        <Route path='/' component={App}>
+            <IndexRoute component={EmployeeDashboard} />
+            <Route path='/dashboard' component={EmployeeDashboard} />
+            <Route path='/dashboard/:id' component={EmployeeProfile} />
+        </Route>
+    </Router>
+)
+```
+
 ## Component state
 
 Each class based component (not pure functional stateless ones) has its own local isolated state. You can access this state via `this.state`. The correct place to set initial
