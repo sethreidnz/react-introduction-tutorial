@@ -154,10 +154,10 @@ through props like this:
 ## Multiple Employees
 
 ```
-git checkout step-5-1
+git checkout step-5-2
 ```
 
-In `step-5` and `step-5-1` I was only showing one employee, in `step-5-1` I have made use of the ES2015 `array.map()` function
+In `step-5` and `step-5-1` I was only showing one employee, in `step-5-2` I have made use of the ES2015 `array.map()` function
 to loop through each item in the employee and render an `EmployeeListItem`.
 
 ``` javascript
