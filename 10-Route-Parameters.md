@@ -56,7 +56,7 @@ also modifying the components state.
 
 ## Adding the route
 
-Finally I have added this component as a route into my `src/routes.js` file with a param `employeeId`:
+Finally I have added this component as a route into my `src/routes.js` file with a param `employeeId` and a full path of `employee/:employeeId`:
 
 ``` javascript
 const Routes = () => (
@@ -64,7 +64,7 @@ const Routes = () => (
         <Route path='/' component={App}>
             <IndexRoute component={EmployeeDashboard} />
             <Route path='/dashboard' component={EmployeeDashboard} />
-            <Route path='/dashboard/:id' component={EmployeeProfile} />
+            <Route path='/employee/:employeeId' component={EmployeeProfile} />
         </Route>
     </Router>
 )
